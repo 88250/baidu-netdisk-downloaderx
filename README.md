@@ -12,6 +12,11 @@
 * 程序只会获取根目录下最新修改的 10 个文件，请将需要下载的文件放到根目录下
 * 绿色无害，放心使用
 
+## 反馈
+
+* [Q 群](https://shang.qq.com/wpa/qunwpa?idkey=e1b4287d075e86792f42f413f75943c91da37d074649d28c51aa6d48361631ba)
+* [社区论坛](https://hacpai.com/article/1524460877352)
+
 ## 鸣谢
 
 * [BaiduPCS-Go](https://github.com/iikira/BaiduPCS-Go)：百度网盘客户端 - Go 语言编写
