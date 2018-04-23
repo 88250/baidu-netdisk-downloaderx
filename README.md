@@ -2,7 +2,7 @@
 
 ## 用法
 
-1. [加入 Q 群](https://shang.qq.com/wpa/qunwpa?idkey=e1b4287d075e86792f42f413f75943c91da37d074649d28c51aa6d48361631ba)下载最新版发布包
+1. [加入 Q 群](https://shang.qq.com/wpa/qunwpa?idkey=e1b4287d075e86792f42f413f75943c91da37d074649d28c51aa6d48361631ba)下载最新版发布包，Q 群 739075568
 2. 在浏览器登录百度网盘，获取 BDUSS Cookie 值（**注意拷贝完整**）
    ![BDUSSpng](https://img.hacpai.com/file/2018/04/d1a78d5163f644d7931925ef5edbf9dd_BDUSS.png)
 3. 登录成功后显示主界面，选择需要下载的文件后点击下载即可
