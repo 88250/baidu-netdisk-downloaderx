@@ -1,5 +1,15 @@
 # 百度网盘不限速下载器
 
+又一个百度网盘不限速下载器，项目地址 https://github.com/b3log/baidu-netdisk-downloaderx 好用记得给颗星！
+
+## 特性
+
+* 简单友好的图形用户界面
+* 支持 Windows、Mac、Linux
+* 通过 Cookie [BDUSS] 登录，无需担心密码泄漏
+* 多线程下载
+* 支持断点续传
+
 ## 用法
 
 1. [加入 Q 群](https://shang.qq.com/wpa/qunwpa?idkey=e1b4287d075e86792f42f413f75943c91da37d074649d28c51aa6d48361631ba)下载最新版发布包，Q 群 739075568
@@ -16,7 +26,7 @@
 ## 反馈
 
 * [Q 群](https://shang.qq.com/wpa/qunwpa?idkey=e1b4287d075e86792f42f413f75943c91da37d074649d28c51aa6d48361631ba)
-* [社区论坛](https://hacpai.com/article/1524460877352)
+* [论坛](https://hacpai.com/article/1524460877352)
 
 ## 鸣谢
 
