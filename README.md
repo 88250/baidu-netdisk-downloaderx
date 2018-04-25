@@ -25,7 +25,7 @@
 
 ## 反馈
 
-* [Q 群](https://shang.qq.com/wpa/qunwpa?idkey=e1b4287d075e86792f42f413f75943c91da37d074649d28c51aa6d48361631ba)
+* [Q 群 739075568](https://shang.qq.com/wpa/qunwpa?idkey=e1b4287d075e86792f42f413f75943c91da37d074649d28c51aa6d48361631ba)
 * [论坛](https://hacpai.com/article/1524460877352)
 
 ## 鸣谢
