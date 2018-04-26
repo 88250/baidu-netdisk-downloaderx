@@ -15,6 +15,7 @@
 1. [下载发布包](https://share.weiyun.com/57zViCm)
 2. 在浏览器登录百度网盘，获取 BDUSS Cookie 值（**注意拷贝完整**）
    ![BDUSSpng](https://img.hacpai.com/file/2018/04/d1a78d5163f644d7931925ef5edbf9dd_BDUSS.png)
+   [如何获取 BDUSS](https://www.baidu.com/s?wd=%E8%8E%B7%E5%8F%96%20bduss)
 3. 登录成功后显示主界面，选择需要下载的文件后点击下载即可
    ![gif](https://img.hacpai.com/file/2018/04/64c3925425d04b0ba19f9cc880ae01c2_.gif)
 
