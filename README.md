@@ -10,7 +10,7 @@
 * 多线程下载
 * 支持断点续传
 
-![主界面](https://github.com/b3log/baidu-netdisk-downloaderx/blob/master/%E4%B8%BB%E7%95%8C%E9%9D%A2.png)
+![主界面](https://img.hacpai.com/file/2018/04/5aebc46de06c4d29aec91d65751aff5a_.png)
 
 ### 用法
 
