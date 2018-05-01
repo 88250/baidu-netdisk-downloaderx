@@ -1,6 +1,8 @@
-## 百度网盘不限速下载器
+## BND
 
-又一个百度网盘不限速下载器，项目地址 https://github.com/b3log/baidu-netdisk-downloaderx 好用记得给颗星！
+BND（Baidu Netdisk Downloader）是一个用 golang 编写的百度网盘不限速下载器。
+
+项目地址 https://github.com/b3log/baidu-netdisk-downloaderx 好用记得给颗星！
 
 ### 特性
 
@@ -32,6 +34,12 @@
 * [论坛](https://hacpai.com/article/1524460877352)
 
 ### 更新日志
+
+#### v2.2.0 / 2018-05-02
+
+* Windows 版加入自动获取 BDUSS 功能
+* 加入暂停功能，重启后支持断点续传
+* 版本更新检查
 
 #### v2.1.0 / 2018-04-28
 
