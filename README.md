@@ -49,8 +49,6 @@ BND（Baidu Netdisk Downloader）是一个用 golang 编写的百度网盘不限
 
 * 调整界面细节
 * 下载路径默认用户目录下的 Downloads 文件夹
-* 发布[吾爱破解论坛特别版](https://www.52pojie.cn/thread-730453-1-1.html)
-* 发布[黑客派论坛特别版](https://hacpai.com/article/1524460877352)
 
 #### v2.0.3 / 2018-04-21
 
