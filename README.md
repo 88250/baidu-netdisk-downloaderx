@@ -35,24 +35,7 @@ BND（Baidu Netdisk Downloader）是一个用 golang 编写的百度网盘不限
 
 ### 更新日志
 
-#### v2.2.0 / 2018-05-02
-
-* Windows 版加入自动获取 BDUSS 功能
-* 加入暂停功能，重启后支持断点续传
-* 版本更新检查
-
-#### v2.1.0 / 2018-04-28
-
-* Windows 版下载路径可供用户选择
-
-#### v2.0.4 / 2018-04-24
-
-* 调整界面细节
-* 下载路径默认用户目录下的 Downloads 文件夹
-
-#### v2.0.3 / 2018-04-21
-
-第一次公开发布。
+请看这里[这里](https://github.com/b3log/baidu-netdisk-downloaderx/blob/master/CHANGE_LOGS.md)。
 
 ### 鸣谢
 
