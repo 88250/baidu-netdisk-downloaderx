@@ -56,5 +56,6 @@ Mac/Linux 下在输入 BDUSS 时请使用鼠标右键的下拉菜单，不支持
 
 ### 鸣谢
 
+* [aria2](https://github.com/aria2/aria2)：超高速的下载引擎
 * [BaiduPCS-Go](https://github.com/iikira/BaiduPCS-Go)：百度网盘客户端 - Go 语言编写
 * [andlabs/ui](https://github.com/andlabs/ui)：跨平台的 Go GUI 库
