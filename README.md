@@ -1,8 +1,8 @@
 ## BND
 
-BND（Baidu Netdisk Downloader）是一个用 golang 编写的百度网盘不限速下载器。
+BND（Baidu Netdisk Downloader）是一款图形界面的百度网盘不限速下载器，支持 Windows、Linux、Mac。
 
-项目地址 https://github.com/b3log/baidu-netdisk-downloaderx 好用记得给颗星！
+BND 由 [B3log 开源社区](https://github.com/b3log)负责维护，项目地址 https://github.com/b3log/baidu-netdisk-downloaderx 好用记得给颗星！
 
 ### 特性
 
