@@ -21,6 +21,8 @@ BND（Baidu Netdisk Downloader）是一个用 golang 编写的百度网盘不限
    ![BDUSSpng](https://img.hacpai.com/file/2018/04/d1a78d5163f644d7931925ef5edbf9dd_BDUSS.png)
 3. 登录成功后显示主界面，选择需要下载的文件后点击下载即可
 
+![BND 教学](https://img.hacpai.com/file/2018/05/c87225b75d12411ca5ec4a57274371eb_.gif)
+
 ### 常见问题
 
 #### 如何获取 BDUSS？
