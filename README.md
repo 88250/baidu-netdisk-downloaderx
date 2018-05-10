@@ -52,7 +52,7 @@ Mac/Linux 下在输入 BDUSS 时请使用鼠标右键的下拉菜单，不支持
 
 ### 更新日志
 
-请看这里[这里](https://github.com/b3log/baidu-netdisk-downloaderx/blob/master/CHANGE_LOGS.md)。
+请看[这里](https://github.com/b3log/baidu-netdisk-downloaderx/blob/master/CHANGE_LOGS.md)。
 
 ### 鸣谢
 
