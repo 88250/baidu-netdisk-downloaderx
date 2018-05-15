@@ -47,8 +47,7 @@ Mac/Linux 下在输入 BDUSS 时请使用鼠标右键的下拉菜单，不支持
 
 ### 问题反馈
 
-* [Q 群 739075568](https://shang.qq.com/wpa/qunwpa?idkey=e1b4287d075e86792f42f413f75943c91da37d074649d28c51aa6d48361631ba)
-* [论坛](https://hacpai.com/article/1524460877352)
+遇到问题可到[论坛](https://hacpai.com/tag/BND)发帖求助。
 
 ### 更新日志
 
