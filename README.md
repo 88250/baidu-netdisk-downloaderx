@@ -12,7 +12,7 @@ BND 由 [B3log 开源社区](https://github.com/b3log)负责维护，项目地�
 * 多线程下载
 * 支持断点续传
 
-![主界面](https://img.hacpai.com/file/2018/05/0ef80bdb19ab4c07a0c20a847d1c6f29_.png)
+![主界面](https://img.hacpai.com/file/2018/05/241876d353a447b69042a49b97d44caa_.png)
 
 ### 用法
 
