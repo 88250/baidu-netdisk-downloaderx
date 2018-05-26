@@ -8,8 +8,8 @@ BND 由 [B3log 开源社区](https://github.com/b3log)负责维护，项目地�
 
 * 简单友好的图形用户界面
 * 支持 Windows、Mac、Linux
-* 通过 Cookie [BDUSS] 登录，无需担心密码泄漏
-* 多线程下载
+* 通过 Cookie \[BDUSS\] 登录，无需担心密码泄漏
+* 通过数据分片并结合 Aria2 突破百度云限速
 * 支持断点续传
 
 ![主界面](https://img.hacpai.com/file/2018/05/241876d353a447b69042a49b97d44caa_.png)
@@ -21,9 +21,11 @@ BND 由 [B3log 开源社区](https://github.com/b3log)负责维护，项目地�
    ![BDUSSpng](https://img.hacpai.com/file/2018/04/d1a78d5163f644d7931925ef5edbf9dd_BDUSS.png)
 3. 登录成功后显示主界面，选择需要下载的文件后点击下载即可
 
-![BND 教学](https://img.hacpai.com/file/2018/05/c87225b75d12411ca5ec4a57274371eb_.gif)
-
 ### 常见问题
+
+请先看这个：
+
+![BND 教学](https://img.hacpai.com/file/2018/05/c87225b75d12411ca5ec4a57274371eb_.gif)
 
 #### 如何获取 BDUSS？
 
@@ -31,7 +33,9 @@ BND 由 [B3log 开源社区](https://github.com/b3log)负责维护，项目地�
 
 #### 文件列表显示不全？
 
-只显示最新的 10 个文件（夹），可在网盘中将你要下载的文件复制到根目录，然后在 BND 中刷新就可以看到了。
+1. 只显示最新的 10 个文件（夹）
+2. 可在网盘中将你要下载的文件复制到根目录
+3. 然后在 BND 中刷新就可以看到了
 
 #### 速度忽高忽低？
 
@@ -39,7 +43,7 @@ BND 显示的速度是瞬时速度，仅作为参考，不必在太在意。
 
 #### 360 报毒？
 
-这个我也不知道为啥，但我敢拍着胸脯保证无毒无害，业界良心！
+这个我也不知道为啥，卸载 360 换其它杀软。
 
 #### Mac/Linux 下如何粘贴 BDUSS？
 
