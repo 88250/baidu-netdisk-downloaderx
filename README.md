@@ -1,3 +1,7 @@
+**BND2 目前正在开发阶段，欢迎前来[讨论](https://github.com/b3log/baidu-netdisk-downloaderx/issues/7)！**
+
+----
+
 ## BND
 
 BND（Baidu Netdisk Downloader）是一款图形界面的百度网盘不限速下载器，支持 Windows、Linux、Mac。
