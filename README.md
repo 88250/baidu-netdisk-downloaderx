@@ -1,4 +1,4 @@
-**BND2 目前正在开发阶段，欢迎前来[讨论](https://github.com/b3log/baidu-netdisk-downloaderx/issues/7)！**
+:sparkles: **BND2 目前正在开发阶段，欢迎前来[讨论](https://github.com/b3log/baidu-netdisk-downloaderx/issues/7)！**
 
 ----
 
