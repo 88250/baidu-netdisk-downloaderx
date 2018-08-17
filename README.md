@@ -10,7 +10,9 @@ BND（Baidu Netdisk Downloader）是一款图形界面的百度网盘不限速�
 
 ![image](https://user-images.githubusercontent.com/873584/44243996-525a0400-a204-11e8-9fde-4ced42aa9129.png)
 
-* 绿色小巧省资源
+**[https://share.weiyun.com/57zViCm](https://share.weiyun.com/57zViCm)**
+
+* 小巧省资源
 * 支持 Linux、支持 32 位的 Windows
 
 细节请看[这里](https://hacpai.com/article/1524460877352)。
