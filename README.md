@@ -6,6 +6,11 @@
 
 **[https://share.weiyun.com/5Z32JP8](https://share.weiyun.com/5Z32JP8)**
 
+* 界面美观，操作便捷
+* 支持多任务并发下载
+
+技术细节请看[这里](https://hacpai.com/article/1535277215816)。
+
 ## BND1
 
 ![image](https://user-images.githubusercontent.com/873584/44243996-525a0400-a204-11e8-9fde-4ced42aa9129.png)
