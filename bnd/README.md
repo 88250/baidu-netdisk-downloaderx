@@ -7,7 +7,7 @@
 1. 安装 golang 环境
 2. 参考 https://github.com/andlabs/libui 编译 UI 库
 3. 不支持交叉编译，只能在目标平台上编译
-4. Windows 执行 build.bat。其他平台可参考该脚本进行构建
+4. Windows 执行 build.bat，Linux/Mac 执行 build.sh
 
 ### 其他
 
