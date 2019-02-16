@@ -1,0 +1,34 @@
+{
+  "name": "bnd2-electron",
+  "version": "2.0.0",
+  "description": "百度不限速下载器",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development electron --inspect=5858 .",
+    "mock": "apimocker --config ../mock/mock.json",
+    "pack": "electron-builder --dir",
+    "dist": "cross-env ELECTRON_MIRROR=http://npm.taobao.org/mirrors/electron/ electron-builder"
+  },
+  "productName": "BND2",
+  "repository": "https://github.com/b3log/bnd2",
+  "keywords": [
+    "Baidu",
+    "下载",
+    "不限速"
+  ],
+  "author": "B3log 开源",
+  "devDependencies": {
+    "apimocker": "^1.0.3",
+    "cross-env": "^5.2.0",
+    "electron": "^2.0.8",
+    "electron-builder": "^20.21.2"
+  },
+  "dependencies": {
+    "extract-zip": "^1.6.7",
+    "ssl-root-cas": "^1.2.5"
+  },
+  "build": {
+    "appId": "org.b3log.bnd2"
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BND2</title>
+    <style>
+        .fn__hide {
+            display: none;
+        }
+
+        .tip {
+            color: #fff;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            font-size: 14px;
+            font-family: Helvetica Neue, Luxi Sans, DejaVu Sans, Tahoma, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            background-color: #4285f4;
+            line-height: 20px;
+            padding: 14px;
+        }
+
+        .tip--error {
+            background-color: #d23f31;
+            text-align: left;
+        }
+    </style>
+</head>
+<body style="margin: 0">
+<div id="loadingTip" class="tip">加载中，请稍后</div>
+<div id="downloadTip" class="fn__hide tip">项目已开源，仅供程序员学习交流，不再提供可执行文件。前往查看<span style="text-decoration:underline;cursor: pointer">源代码</span></div>
+<div id="loginBaiduTip" class="fn__hide tip">请先登录百度网盘账号</div>
+<div id="errorTip" class="fn__hide tip tip--error"></div>
+<webview id="loginWV" style="height:100vh;width:100vw;" nodeintegration></webview>
+<script>
+  require('./renderer.js')
+</script>
+</body>
+</html>

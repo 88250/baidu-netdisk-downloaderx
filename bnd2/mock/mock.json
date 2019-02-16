@@ -1,0 +1,18 @@
+{
+  "mockDirectory": "../mock",
+  "allowedHeaders": [
+    "Content-Type",
+    "*"
+  ],
+  "allowedDomains": [
+    "localhost"
+  ],
+  "webServices": {
+    "status": {
+      "verbs": [
+        "get"
+      ],
+      "mockFile": "status.json"
+    }
+  }
+}
