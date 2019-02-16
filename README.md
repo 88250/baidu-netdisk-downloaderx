@@ -12,7 +12,7 @@
 
 ## BND2
 
-![image](https://user-images.githubusercontent.com/873584/44243663-dd39ff00-a202-11e8-9117-c3c91806d6ff.png)
+![bnd2](https://user-images.githubusercontent.com/970828/52894072-df473f80-31de-11e9-8301-33d2fa9858b4.png)
 
 * 界面美观，操作便捷
 * 支持多任务并发下载
