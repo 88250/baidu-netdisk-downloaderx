@@ -2,6 +2,11 @@
 
 [百度不限速下载器 BND2 技术架构简介](https://hacpai.com/article/1535277215816)
 
+![bnd2](https://user-images.githubusercontent.com/970828/52894072-df473f80-31de-11e9-8301-33d2fa9858b4.png)
+
+* 界面美观，操作便捷
+* 支持多任务并发下载
+
 ### 编译
 
 1. 安装 golang、node 环境
