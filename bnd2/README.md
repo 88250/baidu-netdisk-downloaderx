@@ -11,7 +11,7 @@
 
 1. 安装 golang、node 环境
 2. Windows 执行 build.bat
-3. Mac 在 electron 目录下执行 `npm install && npm run dist`
+3. Mac 在 electron 目录下执行 `npm install && npm run start && npm run dist`
 
 ### 其他
 
