@@ -10,8 +10,9 @@
 ### 编译
 
 1. 安装 golang、node 环境
-2. Windows 执行 build.bat
-3. Mac 在 electron 目录下执行 `npm install && npm run start && npm run dist`
+2. 项目目录 $GOPATH/src/github.com/b3log/bnd2
+3. Windows 执行 build.bat
+4. Mac 在 electron 目录下执行 `npm install && npm run start && npm run dist`
 
 ### 其他
 

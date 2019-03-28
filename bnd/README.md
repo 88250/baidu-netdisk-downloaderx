@@ -19,9 +19,10 @@
 ### 编译
 
 1. 安装 golang 环境
-2. 参考 https://github.com/andlabs/libui 编译 UI 库
-3. 不支持交叉编译，只能在目标平台上编译
-4. Windows 执行 build.bat，Linux/Mac 执行 build.sh
+2. 项目目录 $GOPATH/src/github.com/b3log/bnd
+3. 参考 https://github.com/andlabs/libui 编译 UI 库
+4. 不支持交叉编译，只能在目标平台上编译
+5. Windows 执行 build.bat，Linux/Mac 执行 build.sh
 
 ### 其他
 
