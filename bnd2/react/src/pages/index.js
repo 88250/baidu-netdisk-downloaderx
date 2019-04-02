@@ -36,7 +36,7 @@ export default class Index extends React.Component {
     showPath: false,
     showTraverse: false,
     downloadRow: {},
-    saveFilePath: JSON.parse(localStorage.user).saveDir,
+    saveFilePath: localStorage.saveFilePath || '',
     traverseFinished: false,
     traverseData: {
       all: 1, dirs: 0, files: 1, hSize: '0 kB', finished: false,
@@ -48,6 +48,7 @@ export default class Index extends React.Component {
     window.ipcRenderer.on('asynchronous-reply', (event, arg) => {
       switch (arg.type) {
         case 'chooseFile':
+          localStorage.saveFilePath = arg.data[0]
           this.setState({
             saveFilePath: arg.data[0],
           })
