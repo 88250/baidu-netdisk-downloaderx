@@ -1,6 +1,5 @@
 const {net, ipcMain, dialog} = require('electron')
 const fs = require('fs')
-const https = require('https')
 const path = require('path')
 const homedir = require('os').homedir()
 const {spawn} = require('child_process')
@@ -66,25 +65,24 @@ const cpFilename = (data) => {
   const aria2cFilename = process.platform === 'win32'
     ? 'aria2c_windows.zip'
     : 'aria2c_darwin.zip'
-  extract(aria2cFilename,
+  extract(path.join(path.dirname(__dirname), aria2cFilename),
     {dir: `${homedir}/.bnd2`},
     () => {
       // chmod
       if (process.platform !== 'win32') {
-        fs.open(homedir + '/.bnd2/aria2c', 'a', (err, fd) => {
-          fs.fchmod(fd, '0777')
-        })
+        const aria2cfd = fs.openSync(homedir + '/.bnd2/aria2c', 'a')
+        fs.fchmodSync(aria2cfd, '0777')
       }
     },
   )
 
   // cp bnd2
-  const bnd2Filepath = process.platform === 'win32' ? '../bnd2.exe' : '../bnd2'
-  fs.writeFileSync(`${homedir}/.bnd2/${bnd2Filepath.replace('../', '')}`, fs.readFileSync(bnd2Filepath));
+  const bnd2Filename = process.platform === 'win32' ? 'bnd2.exe' : 'bnd2'
+  fs.writeFileSync(`${homedir}/.bnd2/${bnd2Filename}`,
+    fs.readFileSync(path.join(path.dirname(__dirname), bnd2Filename)))
   if (process.platform !== 'win32') {
-    fs.open(homedir + '/.bnd2/bnd2', 'a', (err, fd) => {
-      fs.fchmod(fd, '0777')
-    })
+    const bnd2fd = fs.openSync(homedir + '/.bnd2/bnd2', 'a')
+    fs.fchmodSync(bnd2fd, '0777')
   }
 
   // write .bnd2/KERNEL_VER
@@ -94,42 +92,6 @@ const cpFilename = (data) => {
 const downloadKernel = (data, event) => {
   cpFilename(data)
   startKernel(event)
-
-
-  // https.globalAgent.options.ca = require('ssl-root-cas/latest').create();
-  // https.get(data.kernelDl.replace('{os}',
-  //   process.platform === 'win32' ? 'windows' : process.platform),
-  //   (response) => {
-  //     // write
-  //     const output = fs.createWriteStream(homedir + '/.bnd2/bnd2.zip')
-  //     cpFilename()
-  //     response.pipe(output).on('finish', () => {
-  //       // unzip
-  //       extract(homedir + '/.bnd2/bnd2.zip',
-  //         {dir: homedir + '/.bnd2'},
-  //         () => {
-  //           // rm zip
-  //           fs.unlinkSync(homedir + '/.bnd2/bnd2.zip')
-  //
-  //           // chmod
-  //           if (process.platform !== 'win32') {
-  //             fs.open(homedir + '/.bnd2/bnd2', 'a', (err, fd) => {
-  //               fs.fchmod(fd, '0777', () => {
-  //                 fs.close(fd, () => {
-  //                   startKernel(event)
-  //                 })
-  //               })
-  //             })
-  //           } else {
-  //             startKernel(event)
-  //           }
-  //         },
-  //       )
-  //     })
-  //
-  //     // write .bnd2/KERNEL_VER
-  //     fs.writeFileSync(homedir + '/.bnd2/KERNEL_VER', data.kernelVer, 'UTF-8')
-  //   })
 }
 
 module.exports.isDev = isDev
@@ -192,7 +154,7 @@ module.exports.initIpcMain = () => {
               downloadKernel(data, event)
             }
           } catch (e) {
-            fs.mkdirSync(homedir + '/.bnd2')
+            fs.mkdirSync(`${homedir}/.bnd2`)
             downloadKernel(data, event)
           }
         })
