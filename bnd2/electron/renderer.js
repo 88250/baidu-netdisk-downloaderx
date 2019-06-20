@@ -80,7 +80,7 @@ onload = () => {
   loginWV.addEventListener('ipc-message', (event) => {
     if (event.channel === 'clearCookie') {
       loginWV.getWebContents().session.clearStorageData()
-      loginWV.src = baiduURL
+      loginWV.src = 'https://pan.baidu.com'
       document.querySelector('#loginBaiduTip').style.display = 'block'
     }
   })
