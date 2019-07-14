@@ -1,8 +1,6 @@
-## BND
+## BND1
 
 [又一个百度网盘不限速下载器 BND](https://hacpai.com/article/1524460877352)
-
-## BND1
 
 ![bnd1](https://user-images.githubusercontent.com/873584/52854939-0825f100-315b-11e9-9aca-d03841b6c44e.png)
 
