@@ -1,5 +1,9 @@
 ## BND2
 
+### v2.0.0 / 2019-07-15
+
+* [提供可执行文件下载](https://github.com/b3log/baidu-netdisk-downloaderx/releases)
+
 ### v2.0.0 / 2019-02-15
 
 * 移除黑客派登录、移除积分制
@@ -19,6 +23,10 @@
 ---
 
 ## BND1
+
+### v4.0.0 / 2019-07-15
+
+* [提供可执行文件下载](https://github.com/b3log/baidu-netdisk-downloaderx/releases)
 
 ### v4.0.0 / 2019-02-15
 
