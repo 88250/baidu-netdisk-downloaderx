@@ -1,6 +1,9 @@
 ## 简介
 
 <a title="Hits" target="_blank" href="https://github.com/b3log/hits"><img src="https://hits.b3log.org/b3log/baidu-netdisk-downloaderx.svg"></a>
+<a title="Code Size" target="_blank" href="https://github.com/b3log/baidu-netdisk-downloaderx"><img src="https://img.shields.io/github/languages/code-size/b3log/baidu-netdisk-downloaderx.svg?style=flat-square&color=6699FF"></a>
+<a title="Downloads" target="_blank" href="https://github.com/b3log/baidu-netdisk-downloaderx/releases"><img src="https://img.shields.io/github/downloads/b3log/baidu-netdisk-downloaderx/total.svg?style=flat-square&color=99CC99"></a>
+<br>
 <a title="GitHub Watchers" target="_blank" href="https://github.com/b3log/baidu-netdisk-downloaderx/watchers"><img src="https://img.shields.io/github/watchers/b3log/baidu-netdisk-downloaderx.svg?label=Watchers&style=social"></a>&nbsp;&nbsp;
 <a title="GitHub Stars" target="_blank" href="https://github.com/b3log/baidu-netdisk-downloaderx/stargazers"><img src="https://img.shields.io/github/stars/b3log/baidu-netdisk-downloaderx.svg?label=Stars&style=social"></a>&nbsp;&nbsp;
 <a title="GitHub Forks" target="_blank" href="https://github.com/b3log/baidu-netdisk-downloaderx/network/members"><img src="https://img.shields.io/github/forks/b3log/baidu-netdisk-downloaderx.svg?label=Forks&style=social"></a>&nbsp;&nbsp;
