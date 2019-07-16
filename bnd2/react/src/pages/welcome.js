@@ -250,15 +250,20 @@ export default class Welcome extends React.Component {
               <Typography variant="h5" component="h2">
                 <span className={classes.link}
                       onClick={openURL.bind(this,
-                        'https://github.com/b3log/baidu-netdisk-downloaderx')}>前往 github</span>
+                        'https://github.com/b3log/baidu-netdisk-downloaderx')}>前往 GitHub</span>
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" className={classes.ftOriginal}
-                      onClick={openURL.bind(this,
-                        'https://hacpai.com/tag/bnd')}>
-                ⚡️
-                查看 BND 相关文章
+              <Button
+                className={classes.ftOriginal}
+                size="small"
+                onClick={this.share.bind(this)}
+              >
+                <ShareIcon/>
+                分享 BND
+                <input className={classes.copyInput} ref={this.text}
+                       readOnly="{true}"
+                       value={this.state.shareText}/>
               </Button>
             </CardActions>
           </Card>
@@ -274,16 +279,11 @@ export default class Welcome extends React.Component {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button
-                className={classes.ftOriginal}
-                size="small"
-                onClick={this.share.bind(this)}
-              >
-                <ShareIcon/>
-                分享 BND
-                <input className={classes.copyInput} ref={this.text}
-                       readOnly="{true}"
-                       value={this.state.shareText}/>
+              <Button size="small" className={classes.ftOriginal}
+                      onClick={openURL.bind(this,
+                        'https://hacpai.com/tag/bnd')}>
+                ⚡️
+                查看 BND 相关文章
               </Button>
             </CardActions>
           </Card>
