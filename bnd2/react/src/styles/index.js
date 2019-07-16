@@ -17,12 +17,12 @@ export default theme => (
       padding: '63px 24px 24px 24px',
       height: '100vh',
       position: 'absolute',
-      left: '75px',
+      left: '58px',
       right: 0,
       overflow: 'auto',
     },
     menu: {
-      left: '75px',
+      left: '58px',
       width: 'auto',
       '&>div': {
         minHeight: '49px'

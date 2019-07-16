@@ -1,7 +1,8 @@
 export default {
   sideLi: {
-    width: '74px',
-    padding: 0
+    width: '58px',
+    padding: 0,
+    overflowX: 'hidden',
   },
   sideItemCurrent: {
     display: 'block',

@@ -123,7 +123,6 @@ class App extends React.Component {
                        </Link>
                      )}
               />
-              <Divider/>
               <Route
                 path="/index"
                 children={({match}) => (
@@ -139,7 +138,6 @@ class App extends React.Component {
                   </Link>
                 )}
               />
-              <Divider/>
               <Route
                 path="/downloading"
                 children={({match}) => (
@@ -178,7 +176,6 @@ class App extends React.Component {
                   </Link>
                 )}
               />
-              <Divider/>
               <Route
                 path="/donate"
                 children={({match}) => (
