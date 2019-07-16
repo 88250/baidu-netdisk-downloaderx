@@ -1,3 +1,5 @@
+import DEFAULT_FONT from './font'
+
 export default {
   fnHide: {
     display: 'none',
@@ -57,7 +59,7 @@ export default {
     wordBreak: 'break-all',
   },
   ftOriginal: {
-    fontFamily: 'Helvetica Neue,Luxi Sans,DejaVu Sans,Tahoma,Hiragino Sans GB,Microsoft Yahei,sans-serif',
+    fontFamily: DEFAULT_FONT,
     textDecoration: 'none',
     textTransform: 'inherit',
     '&:hover': {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import DEFAULT_FONT from './styles/font';
 
 const theme = createMuiTheme({
   palette: {
@@ -14,6 +15,9 @@ const theme = createMuiTheme({
       main: '#d23f31',
       dark: '#932c22',
     },
+  },
+  typography: {
+    fontFamily: DEFAULT_FONT
   },
 });
 

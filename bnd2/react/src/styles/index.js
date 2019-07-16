@@ -3,6 +3,7 @@ import list from './list'
 import utils from './utils'
 import donate from './donate'
 import welcome from './welcome'
+import DEFAULT_FONT from './font'
 
 export default theme => (
   Object.assign({
@@ -12,7 +13,7 @@ export default theme => (
       width: '320px',
     },
     content: {
-      fontFamily: 'Helvetica Neue,Luxi Sans,DejaVu Sans,Tahoma,Hiragino Sans GB,Microsoft Yahei,sans-serif',
+      fontFamily: DEFAULT_FONT,
       padding: '63px 24px 24px 24px',
       height: '100vh',
       position: 'absolute',

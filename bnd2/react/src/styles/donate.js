@@ -1,6 +1,8 @@
+import DEFAULT_FONT from './font'
+
 export default {
   donate: {
-    fontFamily: 'Helvetica Neue,Luxi Sans,DejaVu Sans,Tahoma,Hiragino Sans GB,Microsoft Yahei,sans-serif',
+    fontFamily: DEFAULT_FONT,
     textAlign: 'center'
   },
   donateImg: {
