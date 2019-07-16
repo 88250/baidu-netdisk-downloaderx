@@ -2,7 +2,7 @@ set GOPROXY=https://goproxy.io
 echo Building Kernel
 set GOOS=windows
 set GOARCH=amd64
-go build -v -o bnd2.exe -ldflags "-s -w -H=windowsgui"
+go build -v -o electron/bnd2.exe -ldflags "-s -w -H=windowsgui"
 
 set GOOS=darwin
 set GOARCH=amd64
