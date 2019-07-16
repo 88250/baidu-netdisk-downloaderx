@@ -168,13 +168,7 @@ func (task *dtask) doDownload() {
 		task.State = stateDownloading
 	}
 
-	uri2 := task.PCSURL
-	uri2 = strings.Replace(uri2, "//pcs", "//d.pcs", -1)
-
-	uri4 := task.PCSURL
-	uri4 = strings.Replace(uri4, "//pcs", "//c.pcs", -1)
-
-	gid, err := util.R.AddURI(task.PCSURL, []string{uri2, uri4}, options)
+	gid, err := util.R.AddURI(task.PCSURL, options)
 	if nil != err {
 		logger.Errorf("add task [path=%s] failed [%s]", task.Path, err)
 
