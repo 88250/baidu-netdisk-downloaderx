@@ -3,7 +3,7 @@ import DEFAULT_FONT from './font'
 export default {
   donate: {
     fontFamily: DEFAULT_FONT,
-    width: '460px',
+    width: '520px',
     margin: '0 auto',
   },
   svg: {
