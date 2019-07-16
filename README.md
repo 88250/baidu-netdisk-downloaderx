@@ -17,10 +17,14 @@
 
 [又一个百度网盘不限速下载器 BND](https://hacpai.com/article/1524460877352)
 
-![bnd1](https://user-images.githubusercontent.com/873584/52854939-0825f100-315b-11e9-9aca-d03841b6c44e.png)
-
 * 小巧省资源
-* 支持 Linux、支持 32 位的 Windows
+* 支持 Windows、Linux 和 Mac
+
+![bnd1-windows](https://user-images.githubusercontent.com/873584/52854939-0825f100-315b-11e9-9aca-d03841b6c44e.png)
+
+![bnd1-linux](https://user-images.githubusercontent.com/873584/61257614-66a3d980-a7a4-11e9-9e59-1a0a8cdc0c80.png)
+
+![bnd1-mac](https://user-images.githubusercontent.com/873584/61257784-1a0cce00-a7a5-11e9-9259-def457374578.png)
 
 ### 代码
 
@@ -53,10 +57,11 @@
 
 [百度不限速下载器 BND2 技术架构简介](https://hacpai.com/article/1535277215816)
 
-![bnd2](https://user-images.githubusercontent.com/970828/52894072-df473f80-31de-11e9-8301-33d2fa9858b4.png)
-
 * 界面美观，操作便捷
 * 支持多任务并发下载
+* 仅支持 Windows 和 Mac
+
+![bnd2](https://user-images.githubusercontent.com/970828/52894072-df473f80-31de-11e9-8301-33d2fa9858b4.png)
 
 ### 编译
 
