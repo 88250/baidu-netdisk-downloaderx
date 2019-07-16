@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "latest",
     "@material-ui/icons": "^2.0.1",
+    "classnames": "^2.2.6",
     "echarts": "^4.1.0",
     "electron": "^2.0.0",
     "fetch-jsonp": "^1.1.3",
