@@ -33,11 +33,11 @@ BND 分为两个系列，BND1 和 BND2，下面分别进行介绍。
 * 小巧省资源
 * 支持 Windows、Linux 和 Mac
 
-![bnd1-windows](https://user-images.githubusercontent.com/970828/61260460-ea63c300-a7b0-11e9-9a75-3f378b71d38d.png)
+![bnd1-windows](https://user-images.githubusercontent.com/970828/61263783-cad29780-a7bc-11e9-8920-329035fa8de0.png)
 
-![bnd1-linux](https://user-images.githubusercontent.com/970828/61260458-e9cb2c80-a7b0-11e9-9781-92646a7cafe1.png)
+![bnd1-linux](https://user-images.githubusercontent.com/970828/61263781-ca3a0100-a7bc-11e9-8dd5-0a7fa6fe36da.png)
 
-![bnd1-mac](https://user-images.githubusercontent.com/970828/61260459-ea63c300-a7b0-11e9-99e0-5574bffc4794.png)
+![bnd1-mac](https://user-images.githubusercontent.com/970828/61263782-cad29780-a7bc-11e9-880a-b05dbeb423bf.png)
 
 ### 代码
 
@@ -68,7 +68,7 @@ BND 分为两个系列，BND1 和 BND2，下面分别进行介绍。
 * 支持多任务并发下载
 * 仅支持 Windows 和 Mac
 
-![bnd2](https://user-images.githubusercontent.com/970828/61260462-ea63c300-a7b0-11e9-9d87-10a02e1d0ecc.png)
+![bnd2](https://user-images.githubusercontent.com/970828/61263780-ca3a0100-a7bc-11e9-9ef5-8742f20e94c5.png)
 
 ### 编译
 
