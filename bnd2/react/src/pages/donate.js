@@ -44,7 +44,7 @@ export default class Donate extends React.Component {
               onClick={this.openGithub.bind(this,
                 'https://github.com/b3log/gulu')}>Gulu</span>&nbsp;等一系列开源项目。随着项目规模的增长，我们需要有相应的资金支持才能持续项目的维护和开发。
                 <br/><br/>
-                如果你觉得 BND2 还算好用，可通过支付宝对我们进行赞助支持，非常感谢！
+                如果你觉得 BND2 还算好用，可通过支付宝对我们进行赞助，谢谢 🙏
         <br/><br/><br/><br/>
         <Button className={classes.ftOriginal}
                 color='primary'
