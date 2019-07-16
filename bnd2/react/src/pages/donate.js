@@ -13,7 +13,7 @@ export default class Donate extends React.Component {
     return (
       <div className={classes.donate}>
         <br/><br/>
-        <h2>💜 欢迎成为我们的赞助者</h2>
+        <h2>❤️ 欢迎成为我们的赞助者</h2>
         <br/><br/><br/>
         <span className={classes.link}
               onClick={this.openGithub.bind(this,
@@ -42,8 +42,7 @@ export default class Donate extends React.Component {
                 'https://github.com/b3log/vditor')}>Vditor</span>、
         <span className={classes.link}
               onClick={this.openGithub.bind(this,
-                'https://github.com/b3log/gulu')}>Gulu</span>&nbsp;
-        等一系列开源项目。随着项目规模的增长，我们需要有相应的资金支持才能持续项目的维护和开发。
+                'https://github.com/b3log/gulu')}>Gulu</span>&nbsp;等一系列开源项目。随着项目规模的增长，我们需要有相应的资金支持才能持续项目的维护和开发。
         <br/><br/><br/><br/>
         <Button className={classes.ftOriginal}
                 color='primary'
