@@ -1,6 +1,7 @@
 package util
 
 import (
+	"context"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -40,7 +41,7 @@ func StartAria2() {
 
 	time.Sleep(time.Second)
 	var err error
-	R, err = rpc.New("http://localhost:"+strconv.Itoa(AriaPort)+"/jsonrpc", "b3log.org")
+	R, err = rpc.New(context.Background(), "http://localhost:"+strconv.Itoa(AriaPort)+"/jsonrpc", "b3log.org", 7*time.Second, nil)
 	if nil != err {
 		logger.Fatalf("start aria2 rpc failed [%s]", err)
 	}
