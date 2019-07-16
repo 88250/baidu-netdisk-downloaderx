@@ -74,9 +74,8 @@ BND 分为两个系列，BND1 和 BND2，下面分别进行介绍。
 
 1. 安装 golang、node 环境
 2. 项目目录 $GOPATH/src/github.com/b3log/bnd2
-3. Windows 执行 build.bat
-4. Mac 在 electron 目录下执行 `npm install && npm run dist`
-5. `electron/dist` 目录下运行可执行文件
+3. Windows 执行 build.bat，Mac 执行 build.sh
+4. `electron/dist` 目录下运行可执行文件
 
 ### 其他
 
