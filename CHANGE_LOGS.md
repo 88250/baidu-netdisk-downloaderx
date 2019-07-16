@@ -2,7 +2,7 @@
 
 ### v2.0.0 / 2019-07-15
 
-* [提供可执行文件下载](https://github.com/b3log/baidu-netdisk-downloaderx/releases)
+* [提供可执行文件下载](https://hacpai.com/article/1563154719934)
 
 ### v2.0.0 / 2019-02-15
 
