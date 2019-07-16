@@ -1,13 +1,23 @@
-## 💡 简介
-
+<p align = "center">
+<img alt="BND" src="https://user-images.githubusercontent.com/873584/61258852-25162d00-a7aa-11e9-94eb-00c14707b49a.png">
+<br><br>
+一款图形界面的百度网盘不限速下载器，支持 Windows、Linux 和 Mac
+<br><br>
 <a title="Hits" target="_blank" href="https://github.com/b3log/hits"><img src="https://hits.b3log.org/b3log/baidu-netdisk-downloaderx.svg"></a>
 <a title="Code Size" target="_blank" href="https://github.com/b3log/baidu-netdisk-downloaderx"><img src="https://img.shields.io/github/languages/code-size/b3log/baidu-netdisk-downloaderx.svg?style=flat-square&color=6699FF"></a>
 <a title="Downloads" target="_blank" href="https://github.com/b3log/baidu-netdisk-downloaderx/releases"><img src="https://img.shields.io/github/downloads/b3log/baidu-netdisk-downloaderx/total.svg?style=flat-square&color=99CC99"></a>
+<a title="GPLv3" target="_blank" href="https://github.com/b3log/baidu-netdisk-downloaderx/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-GPLv3-orange.svg?style=flat-square"></a>
 <br>
+<a title="GitHub Commits" target="_blank" href="https://github.com/b3log/baidu-netdisk-downloaderx/commits/master"><img src="https://img.shields.io/github/commit-activity/m/b3log/baidu-netdisk-downloaderx.svg?style=flat-square"></a>
+<a title="Last Commit" target="_blank" href="https://github.com/b3log/baidu-netdisk-downloaderx/commits/master"><img src="https://img.shields.io/github/last-commit/b3log/baidu-netdisk-downloaderx.svg?style=flat-square&color=FF9900"></a>
+<a title="GitHub Pull Requests" target="_blank" href="https://github.com/b3log/baidu-netdisk-downloaderx/pulls"><img src="https://img.shields.io/github/issues-pr-closed/b3log/baidu-netdisk-downloaderx.svg?style=flat-square&color=FF9966"></a>
+<br><br>
 <a title="GitHub Watchers" target="_blank" href="https://github.com/b3log/baidu-netdisk-downloaderx/watchers"><img src="https://img.shields.io/github/watchers/b3log/baidu-netdisk-downloaderx.svg?label=Watchers&style=social"></a>&nbsp;&nbsp;
 <a title="GitHub Stars" target="_blank" href="https://github.com/b3log/baidu-netdisk-downloaderx/stargazers"><img src="https://img.shields.io/github/stars/b3log/baidu-netdisk-downloaderx.svg?label=Stars&style=social"></a>&nbsp;&nbsp;
 <a title="GitHub Forks" target="_blank" href="https://github.com/b3log/baidu-netdisk-downloaderx/network/members"><img src="https://img.shields.io/github/forks/b3log/baidu-netdisk-downloaderx.svg?label=Forks&style=social"></a>&nbsp;&nbsp;
 <a title="Author GitHub Followers" target="_blank" href="https://github.com/88250"><img src="https://img.shields.io/github/followers/88250.svg?label=Followers&style=social"></a>
+
+## 💡 简介
 
 [BND](https://github.com/b3log/baidu-netdisk-downloaderx)（Baidu Netdisk Downloader）是一款图形界面的百度网盘不限速下载器，支持 Windows、Linux 和 Mac，下载地址请看[这里](https://hacpai.com/article/1563154719934)。
 
