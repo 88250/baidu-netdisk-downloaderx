@@ -250,7 +250,27 @@ export default class Welcome extends React.Component {
               <Typography variant="h5" component="h2">
                 <span className={classes.link}
                       onClick={openURL.bind(this,
-                        'https://github.com/b3log/baidu-netdisk-downloaderx')}>前往 GitHub</span>
+                        'https://github.com/b3log/baidu-netdisk-downloaderx')}>前往 github</span>
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small" className={classes.ftOriginal}
+                      onClick={openURL.bind(this,
+                        'https://hacpai.com/tag/bnd')}>
+                ⚡️
+                浏览 BND 相关讨论
+              </Button>
+            </CardActions>
+          </Card>
+          <Card className={classes.welcomeCard}>
+            <CardContent>
+              <Typography color="textSecondary">
+                随便逛逛
+              </Typography>
+              <Typography variant="h5" className={classes.link}
+                          component="h2" onClick={openURL.bind(this,
+                'http://hacpai.com')}>
+                黑客派社区
               </Typography>
             </CardContent>
             <CardActions>
@@ -267,35 +287,9 @@ export default class Welcome extends React.Component {
               </Button>
             </CardActions>
           </Card>
-          <Card className={classes.welcomeCard}>
-            <CardContent>
-              <Typography color="textSecondary">
-                随便逛逛
-              </Typography>
-              <Typography variant="h5" className={classes.link}
-                          component="h2" onClick={openURL.bind(this,
-                'http://hacpai.com')}>
-                B3log 社区
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button size="small" className={classes.ftOriginal}
-                      onClick={openURL.bind(this,
-                        'https://hacpai.com/tag/bnd')}>
-                ⚡️
-                查看 BND 相关文章
-              </Button>
-            </CardActions>
-          </Card>
         </div>
 
         <Card style={{display: this.state.showB3log}}>
-          <CardContent>
-            <Typography color="textSecondary">
-              B3log 社区动态
-            </Typography>
-          </CardContent>
-          <Divider/>
           <Table className={classes.ftOriginal}>
             <TableBody>
               {
