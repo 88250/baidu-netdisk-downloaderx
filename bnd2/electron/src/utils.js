@@ -24,17 +24,12 @@ const getBND2Version = () => {
 }
 
 const startKernel = (event) => {
-  let bnd2
   let fileName = 'bnd2.exe'
   if (process.platform !== 'win32') {
     fileName = 'bnd2'
   }
 
-  if (isDev()) {
-    bnd2 = spawn(path.join('..', fileName))
-  } else {
-    bnd2 = spawn(path.join(homedir, '.bnd2', fileName))
-  }
+  let bnd2 = spawn(path.join(homedir, '.bnd2', fileName))
 
   event.sender.send('asynchronous-reply', {
     type: 'loaded',
