@@ -37,10 +37,10 @@ const createWindow = () => {
 const createMenu = () => {
   const template = [
     {
-      label: 'View',
+      label: '选项',
       submenu: [
         {
-          label: 'About BND2',
+          label: 'BND2 项目主页',
           click () {
             require('electron').
               shell.
