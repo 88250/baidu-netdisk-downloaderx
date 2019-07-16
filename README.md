@@ -1,4 +1,4 @@
-## 简介
+## 💡 简介
 
 <a title="Hits" target="_blank" href="https://github.com/b3log/hits"><img src="https://hits.b3log.org/b3log/baidu-netdisk-downloaderx.svg"></a>
 <a title="Code Size" target="_blank" href="https://github.com/b3log/baidu-netdisk-downloaderx"><img src="https://img.shields.io/github/languages/code-size/b3log/baidu-netdisk-downloaderx.svg?style=flat-square&color=6699FF"></a>
@@ -9,11 +9,11 @@
 <a title="GitHub Forks" target="_blank" href="https://github.com/b3log/baidu-netdisk-downloaderx/network/members"><img src="https://img.shields.io/github/forks/b3log/baidu-netdisk-downloaderx.svg?label=Forks&style=social"></a>&nbsp;&nbsp;
 <a title="Author GitHub Followers" target="_blank" href="https://github.com/88250"><img src="https://img.shields.io/github/followers/88250.svg?label=Followers&style=social"></a>
 
-[BND](https://github.com/b3log/baidu-netdisk-downloaderx)（Baidu Netdisk Downloader）是一款图形界面的百度网盘不限速下载器，支持 Windows、Linux 和 Mac。
+[BND](https://github.com/b3log/baidu-netdisk-downloaderx)（Baidu Netdisk Downloader）是一款图形界面的百度网盘不限速下载器，支持 Windows、Linux 和 Mac，下载地址请看[这里](https://hacpai.com/article/1563154719934)。
 
-下载地址请看[这里](https://hacpai.com/article/1563154719934)。BND 分为两个系列，BND1 和 BND2，下面分别进行介绍。
+BND 分为两个系列，BND1 和 BND2，下面分别进行介绍。
 
-## BND1
+## ⚡ BND1
 
 [又一个百度网盘不限速下载器 BND](https://hacpai.com/article/1524460877352)
 
@@ -47,13 +47,7 @@
 * 保留了版本检查机制，可搜索 rhythm.b3log.org 进行相关修改
 * 和服务端交互时用于加密请求响应数据的密钥已在源码中公开
 
-### 鸣谢
-
-* [aria2](https://github.com/aria2/aria2)：超高速的下载引擎
-* [BaiduPCS-Go](https://github.com/iikira/BaiduPCS-Go)：百度网盘客户端 - Go 语言编写
-* [andlabs/ui](https://github.com/andlabs/ui)：跨平台的 Go GUI 库
-
-## BND2
+## ⚡ BND2
 
 [百度不限速下载器 BND2 技术架构简介](https://hacpai.com/article/1535277215816)
 
@@ -77,21 +71,28 @@
 * 保留了版本检查机制，可搜索 rhythm.b3log.org 进行相关修改
 * 和服务端交互时用于加密请求响应数据的密钥已在源码中公开
 
-### 鸣谢
+## 🏘️ 社区
+
+BND 项目的主要贡献者来自于 B3log 开源社区，欢迎大家对 BND 的开发、测试、反馈、推广等贡献自己的一份力量。[B3log 开源组织欢迎大家加入！](https://hacpai.com/article/1463025124998)
+
+* [讨论区](https://hacpai.com/tag/bnd)
+* [报告问题](https://github.com/b3log/baidu-netdisk-downloaderx/issues/new/choose)
+
+## 📄 授权
+
+BND 使用 [GPLv3](https://www.gnu.org/licenses/gpl-3.0.txt) 开源协议。
+
+## 🙏 鸣谢
 
 * [aria2](https://github.com/aria2/aria2)：超高速的下载引擎
+* [BaiduPCS-Go](https://github.com/iikira/BaiduPCS-Go)：百度网盘客户端 - Go 语言编写
+* [andlabs/ui](https://github.com/andlabs/ui)：跨平台的 Go GUI 库
 * [React](https://github.com/facebook/react)：使用 JS 构建用户界面库
 * [Electron](https://github.com/electron/electron)：使用 JS、HTML、CSS 的跨平台桌面应用库
 
-## 贡献者
-
-BND 项目的主要贡献者来自于 B3log 开源社区，大家对 BND 的开发、测试、反馈、推广等贡献了自己的一份力量。
-
-[B3log 开源组织欢迎大家加入！](https://hacpai.com/article/1463025124998)
-
 ---
 
-## 开源项目推荐
+## 👍 开源项目推荐
 
 * 如果你需要搭建一个个人博客系统，可以考虑使用 [Solo](https://github.com/b3log/solo)
 * 如果你需要搭建一个多用户博客平台，可以考虑使用 [Pipe](https://github.com/b3log/pipe)
