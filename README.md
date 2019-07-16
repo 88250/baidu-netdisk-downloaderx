@@ -22,7 +22,7 @@
 
 ## 💡 简介
 
-[BND](https://github.com/b3log/baidu-netdisk-downloaderx)（Baidu Netdisk Downloader）是一款图形界面的百度网盘不限速下载器，支持 Windows、Linux 和 Mac，下载地址请看[这里](https://hacpai.com/article/1563154719934)。
+[BND](https://github.com/b3log/baidu-netdisk-downloaderx)（Baidu Netdisk Downloader）是一款图形界面的百度网盘不限速下载器，支持 Windows、Linux 和 Mac，下载请看[这里](https://hacpai.com/article/1563154719934)。
 
 BND 分为两个系列，BND1 和 BND2，下面分别进行介绍。
 
