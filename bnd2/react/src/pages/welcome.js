@@ -258,7 +258,7 @@ export default class Welcome extends React.Component {
                       onClick={openURL.bind(this,
                         'https://hacpai.com/tag/bnd')}>
                 ⚡️
-                查看 BND 相关文章
+                浏览 BND 相关讨论
               </Button>
             </CardActions>
           </Card>
@@ -270,7 +270,7 @@ export default class Welcome extends React.Component {
               <Typography variant="h5" className={classes.link}
                           component="h2" onClick={openURL.bind(this,
                 'http://hacpai.com')}>
-                B3log 社区
+                黑客派社区
               </Typography>
             </CardContent>
             <CardActions>
@@ -290,12 +290,6 @@ export default class Welcome extends React.Component {
         </div>
 
         <Card style={{display: this.state.showB3log}}>
-          <CardContent>
-            <Typography color="textSecondary">
-              B3log 社区动态
-            </Typography>
-          </CardContent>
-          <Divider/>
           <Table className={classes.ftOriginal}>
             <TableBody>
               {
