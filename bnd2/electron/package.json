@@ -19,10 +19,10 @@
   ],
   "author": "B3log 开源",
   "devDependencies": {
-    "apimocker": "^1.1.1",
+    "apimocker": "^1.1.3",
     "cross-env": "^5.2.0",
     "electron": "^2.0.8",
-    "electron-builder": "^20.39.0"
+    "electron-builder": "^20.44.2"
   },
   "dependencies": {
     "extract-zip": "^1.6.7",

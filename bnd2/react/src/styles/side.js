@@ -9,6 +9,7 @@ export default {
     backgroundColor: 'rgba(0, 0, 0, 0.08)',
   },
   sideSVG: {
+    height: '34px',
     marginRight: 0,
   },
 }

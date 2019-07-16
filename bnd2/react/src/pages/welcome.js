@@ -196,12 +196,12 @@ export default class Welcome extends React.Component {
                 完成情况
               </Typography>
               <div>
-                <Typography variant="headline" component="h2">
+                <Typography variant="h5" component="h2">
                   {this.state.data.ctasks.ctaskCount !== 0
                     ? this.state.data.ctasks.ctaskCount + ' 个文件'
                     : '- -'}
                 </Typography>
-                <Typography variant="headline" component="h2">
+                <Typography variant="h5" component="h2">
                   {this.state.data.ctasks.ctaskCount !== 0 &&
                   this.state.data.ctasks.hTotalSize}
                 </Typography>
@@ -231,7 +231,7 @@ export default class Welcome extends React.Component {
               <Typography color="textSecondary">
                 点个赞支持下呗
               </Typography>
-              <Typography variant="headline" component="h2">
+              <Typography variant="h5" component="h2">
                 <span className={classes.link}
                       onClick={this.openURL.bind(this, undefined)}>BND2</span>
               </Typography>
@@ -249,7 +249,7 @@ export default class Welcome extends React.Component {
               <Typography color="textSecondary">
                 随便看看
               </Typography>
-              <Typography variant="headline" className={classes.link}
+              <Typography variant="h5" className={classes.link}
                           component="h2" onClick={this.toggleB3log}>
                 B3log 社区动态
               </Typography>
@@ -263,7 +263,7 @@ export default class Welcome extends React.Component {
                 <ShareIcon/>
                 分享 BND2
                 <input className={classes.copyInput} ref={this.text}
-                       readOnly="true"
+                       readOnly="{true}"
                        value={this.state.shareText}/>
               </Button>
             </CardActions>

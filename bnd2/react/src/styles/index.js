@@ -25,7 +25,7 @@ export default theme => (
       left: '58px',
       width: 'auto',
       '&>div': {
-        minHeight: '49px'
+        minHeight: '51px',
       }
     },
   }, utils, side, list, donate, welcome)
