@@ -35,11 +35,28 @@ const createWindow = () => {
 }
 
 const createMenu = () => {
-  if (isDev()) {
-    return
-  }
-
-  Menu.setApplicationMenu(null)
+  const template = [
+    {
+      label: 'View',
+      submenu: [
+        {
+          label: 'About BND2',
+          click () {
+            require('electron').
+              shell.
+              openExternal('https://github.com/b3log/baidu-netdisk-downloaderx')
+          },
+        },
+        {type: 'separator'},
+        {role: 'toggledevtools'},
+        {role: 'togglefullscreen'},
+        {type: 'separator'},
+        {role: 'quit'},
+      ],
+    },
+  ]
+  const menu = Menu.buildFromTemplate(template)
+  Menu.setApplicationMenu(menu)
 }
 
 // This method will be called when Electron has finished
