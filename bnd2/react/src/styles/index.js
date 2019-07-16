@@ -7,11 +7,6 @@ import DEFAULT_FONT from './font'
 
 export default theme => (
   Object.assign({
-    b3log: {
-      border: 0,
-      height: '100vh',
-      width: '320px',
-    },
     content: {
       fontFamily: DEFAULT_FONT,
       padding: '63px 24px 24px 24px',

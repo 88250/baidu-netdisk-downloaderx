@@ -3,6 +3,10 @@ import PropTypes from 'prop-types'
 import Button from '@material-ui/core/Button'
 import RemoveIcon from '@material-ui/icons/DeleteOutline'
 import LocalIcon from '@material-ui/icons/FilterCenterFocus'
+import Toolbar from '@material-ui/core/Toolbar'
+import Typography from '@material-ui/core/Typography'
+import { clearCookie } from '../utils/clearCookie'
+import AppBar from '@material-ui/core/AppBar'
 
 export default class Finished extends React.Component {
   state = {
@@ -43,6 +47,21 @@ export default class Finished extends React.Component {
 
     return (
       <div>
+        <AppBar
+          className={classes.menu}>
+          <Toolbar>
+            <Typography className={classes.fnFlex1} color="inherit" noWrap>
+              下载完成
+            </Typography>
+            <Button
+              className={classes.ftOriginal}
+              color="inherit"
+              onClick={clearCookie}
+            >
+              切换账号
+            </Button>
+          </Toolbar>
+        </AppBar>
         <div className={classes.fnFlex}>
           <div className={classes.fnFlex1}>
             <Button className={classes.ftOriginal} onClick={this.deleteAll}

@@ -5,9 +5,6 @@ import classnames from 'classnames'
 import Drawer from '@material-ui/core/Drawer'
 import Badge from '@material-ui/core/Badge'
 import { withStyles } from '@material-ui/core/styles'
-import AppBar from '@material-ui/core/AppBar'
-import Button from '@material-ui/core/Button'
-import Toolbar from '@material-ui/core/Toolbar'
 import List from '@material-ui/core/List'
 import Divider from '@material-ui/core/Divider'
 import ListItem from '@material-ui/core/ListItem'
@@ -17,7 +14,6 @@ import AllInboxIcon from '@material-ui/icons/AllInbox'
 import DoneOutlineIcon from '@material-ui/icons/DoneOutline'
 import ChartIcon from '@material-ui/icons/BubbleChart'
 import FavoriteIcon from '@material-ui/icons/FavoriteBorder'
-import Typography from '@material-ui/core/Typography'
 import withRoot from './withRoot'
 import Index from './pages/index'
 import Downloading from './pages/downloading'
@@ -29,46 +25,13 @@ import styles from './styles'
 class App extends React.Component {
   state = {
     count: 0,
-    title: '',
     downloadingData: '',
     finishedData: '',
     indexData: '',
     welcomeData: '',
   }
 
-  handleTitle = (title) => {
-    this.setState({
-      title,
-    })
-  }
-
-  clearCookie () {
-    window.ipcRenderer.sendToHost('clearCookie')
-  }
-
   componentDidMount () {
-    let title = '欢迎使用'
-    switch (window.location.pathname) {
-      case '/index':
-        title = '全部文件'
-        break
-      case '/downloading':
-        title = '正在下载'
-        break
-      case '/finished':
-        title = '下载完成'
-        break
-      case '/donate':
-        title = '成为赞助者'
-        break
-      default :
-        break
-    }
-
-    this.setState({
-      title,
-    })
-
     window.rws.send(JSON.stringify({cmd: 'counttasks', param: {}}))
     window.rws.onmessage = (evt) => {
       const data = JSON.parse(evt.data)
@@ -111,8 +74,7 @@ class App extends React.Component {
               <Route exact
                      path="/"
                      children={({match}) => (
-                       <Link onClick={this.handleTitle.bind(this, '欢迎使用')}
-                             className={match && classes.sideItemCurrent}
+                       <Link className={match && classes.sideItemCurrent}
                              to="/">
                          <ListItem button>
                            <ListItemIcon>
@@ -127,8 +89,7 @@ class App extends React.Component {
               <Route
                 path="/index"
                 children={({match}) => (
-                  <Link onClick={this.handleTitle.bind(this, '全部文件')}
-                        className={match && classes.sideItemCurrent}
+                  <Link className={match && classes.sideItemCurrent}
                         to="/index">
                     <ListItem button>
                       <ListItemIcon>
@@ -143,8 +104,7 @@ class App extends React.Component {
               <Route
                 path="/downloading"
                 children={({match}) => (
-                  <Link onClick={this.handleTitle.bind(this, '正在下载')}
-                        className={match && classes.sideItemCurrent}
+                  <Link className={match && classes.sideItemCurrent}
                         to="/downloading">
                     <ListItem button>
                       <ListItemIcon>
@@ -166,8 +126,7 @@ class App extends React.Component {
               <Route
                 path="/finished"
                 children={({match}) => (
-                  <Link onClick={this.handleTitle.bind(this, '下载完成')}
-                        className={match && classes.sideItemCurrent}
+                  <Link className={match && classes.sideItemCurrent}
                         to="/finished">
                     <ListItem button>
                       <ListItemIcon>
@@ -182,8 +141,7 @@ class App extends React.Component {
               <Route
                 path="/donate"
                 children={({match}) => (
-                  <Link onClick={this.handleTitle.bind(this, '成为赞助者')}
-                        className={match && classes.sideItemCurrent}
+                  <Link className={match && classes.sideItemCurrent}
                         to="/donate">
                     <ListItem button>
                       <ListItemIcon>
@@ -197,22 +155,6 @@ class App extends React.Component {
             </List>
           </Drawer>
           <main className={classes.content}>
-            <AppBar
-              className={classes.menu}>
-              <Toolbar>
-                <Typography className={classes.fnFlex1}
-                            color="inherit" noWrap>
-                  {this.state.title}
-                </Typography>
-                <Button
-                  className={classes.ftOriginal}
-                  color="inherit"
-                  onClick={this.clearCookie}
-                >
-                  切换账号
-                </Button>
-              </Toolbar>
-            </AppBar>
             <Route path="/" exact render={props => (
               <Welcome classes={classes} rwsData={this.state.welcomeData}/>
             )}/>

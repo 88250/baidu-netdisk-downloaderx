@@ -1,20 +1,28 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
-import fetchJsonp from 'fetch-jsonp'
+import classnames from 'classnames'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import Button from '@material-ui/core/Button'
 import ShareIcon from '@material-ui/icons/Share'
 import PlayIcon from '@material-ui/icons/PlayArrow'
-import StarIcon from '@material-ui/icons/Star'
+import GetAPPIcon from '@material-ui/icons/GetApp'
 import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
 import Snackbar from '@material-ui/core/Snackbar'
-import SwipeableDrawer from '@material-ui/core/SwipeableDrawer'
 import LinearProgress from '@material-ui/core/LinearProgress'
-import classnames from 'classnames'
+import Toolbar from '@material-ui/core/Toolbar'
+import AppBar from '@material-ui/core/AppBar'
+import Divider from '@material-ui/core/Divider'
 import echarts from 'echarts/lib/echarts'
+import { openURL } from '../utils/openURL'
+import { clearCookie } from '../utils/clearCookie'
+import fetchJsonp from 'fetch-jsonp'
+import Table from '@material-ui/core/Table'
+import TableBody from '@material-ui/core/TableBody'
+import TableRow from '@material-ui/core/TableRow'
+import TableCell from '@material-ui/core/TableCell'
 
 require('echarts/lib/chart/line')
 require('echarts/lib/component/tooltip')
@@ -22,7 +30,7 @@ require('echarts/lib/component/tooltip')
 export default class Welcome extends React.Component {
   state = {
     b3logList: [],
-    b3log: false,
+    showB3log: 'block',
     copied: false,
     shareText: 'https://hacpai.com/tag/bnd',
     data: {
@@ -132,6 +140,14 @@ export default class Welcome extends React.Component {
     document.getElementById('chart').style.width = (window.outerWidth - 124) +
       'px'
     window.rws.send(JSON.stringify({cmd: 'statistic', param: {}}))
+
+    fetchJsonp('https://hacpai.com/apis/news').
+      then(response => response.json()).
+      then(json => {
+        this.setState({
+          b3logList: json.articles,
+        })
+      })
   }
 
   componentWillUnmount () {
@@ -148,26 +164,10 @@ export default class Welcome extends React.Component {
         this.chartOption.series.data = data.data.speeds || []
         this.chartOption.xAxis[0].data = data.data.hSpeeds || []
         this.chart.setOption(this.chartOption)
+        this.setState({showB3log: 'none'})
+      } else {
+        this.setState({showB3log: 'block'})
       }
-    }
-  }
-
-  openURL (path = 'https://github.com/b3log/baidu-netdisk-downloaderx') {
-    window.shell.openExternal(path)
-  }
-
-  toggleB3log = () => {
-    if (this.state.b3log) {
-      this.setState({b3log: false})
-    } else {
-      this.setState({b3log: true})
-      fetchJsonp('https://hacpai.com/apis/news')
-      .then(response => response.json())
-      .then(json => {
-          this.setState({
-            b3logList: json.articles,
-          })
-        })
     }
   }
 
@@ -189,41 +189,57 @@ export default class Welcome extends React.Component {
     const {classes} = this.props
     return (
       <div>
+        <AppBar
+          className={classes.menu}>
+          <Toolbar>
+            <Typography className={classes.fnFlex1} color="inherit" noWrap>
+              欢迎使用
+            </Typography>
+            <Button
+              className={classes.ftOriginal}
+              color="inherit"
+              onClick={clearCookie}
+            >
+              切换账号
+            </Button>
+          </Toolbar>
+        </AppBar>
         <div className={classes.fnFlex}>
           <Card className={classes.welcomeCard}>
             <CardContent>
               <Typography color="textSecondary">
                 完成情况
               </Typography>
-              <div>
-                <Typography variant="h5" component="h2">
-                  {this.state.data.ctasks.ctaskCount !== 0
-                    ? this.state.data.ctasks.ctaskCount + ' 个文件'
-                    : '- -'}
-                </Typography>
-                <Typography variant="h5" component="h2">
-                  {this.state.data.ctasks.ctaskCount !== 0 &&
-                  this.state.data.ctasks.hTotalSize}
-                </Typography>
-              </div>
+              <Typography variant="h5" component="h2">
+                <Link to='/finished'
+                      className={classes.link}>{this.state.data.ctasks.ctaskCount} 个文件</Link>
+              </Typography>
             </CardContent>
-            {
-              this.state.data.ctasks.ctaskCount === 0 &&
-              (
-                <CardActions>
-                  <Link to='/index' className={classes.ftOriginal}>
-                    <Button
-                      className={classes.ftOriginal}
-                      size="small"
-                      onClick={this.share.bind(this)}
-                    >
-                      <PlayIcon/>
-                      查看全部文件
-                    </Button>
-                  </Link>
-                </CardActions>
-              )
-            }
+            <CardActions>
+              {
+                this.state.data.ctasks.ctaskCount === 0 ?
+                  (
+                    <Link to='/index' className={classes.ftOriginal}>
+                      <Button
+                        className={classes.ftOriginal}
+                        size="small"
+                        onClick={this.share.bind(this)}
+                      >
+                        <PlayIcon/>
+                        查看全部文件
+                      </Button>
+                    </Link>
+                  )
+                  :
+                  (<Link to='/finished' className={classes.ftOriginal}>
+                      <Button size="small" className={classes.ftOriginal}>
+                        <GetAPPIcon/>
+                        {this.state.data.ctasks.hTotalSize}
+                      </Button>
+                    </Link>
+                  )
+              }
+            </CardActions>
           </Card>
           <Card
             className={classnames(classes.welcomeCard, classes.welcomeCardMid)}>
@@ -233,25 +249,28 @@ export default class Welcome extends React.Component {
               </Typography>
               <Typography variant="h5" component="h2">
                 <span className={classes.link}
-                      onClick={this.openURL.bind(this, undefined)}>BND2</span>
+                      onClick={openURL.bind(this,
+                        'https://github.com/b3log/baidu-netdisk-downloaderx')}>前往 github</span>
               </Typography>
             </CardContent>
             <CardActions>
               <Button size="small" className={classes.ftOriginal}
-                      onClick={this.openURL.bind((this, undefined))}>
-                <StarIcon/>
-                前往 github
+                      onClick={openURL.bind(this,
+                        'https://hacpai.com/tag/bnd')}>
+                ⚡️
+                查看 BND 相关文章
               </Button>
             </CardActions>
           </Card>
           <Card className={classes.welcomeCard}>
             <CardContent>
               <Typography color="textSecondary">
-                随便看看
+                随便逛逛
               </Typography>
               <Typography variant="h5" className={classes.link}
-                          component="h2" onClick={this.toggleB3log}>
-                B3log 社区动态
+                          component="h2" onClick={openURL.bind(this,
+                'http://hacpai.com')}>
+                B3log 社区
               </Typography>
             </CardContent>
             <CardActions>
@@ -261,7 +280,7 @@ export default class Welcome extends React.Component {
                 onClick={this.share.bind(this)}
               >
                 <ShareIcon/>
-                分享 BND2
+                分享 BND
                 <input className={classes.copyInput} ref={this.text}
                        readOnly="{true}"
                        value={this.state.shareText}/>
@@ -269,6 +288,36 @@ export default class Welcome extends React.Component {
             </CardActions>
           </Card>
         </div>
+
+        <Card style={{display: this.state.showB3log}}>
+          <CardContent>
+            <Typography color="textSecondary">
+              B3log 社区动态
+            </Typography>
+          </CardContent>
+          <Divider/>
+          <Table className={classes.ftOriginal}>
+            <TableBody>
+              {
+                this.state.b3logList.map(row => {
+                  return (
+                    <TableRow
+                      hover
+                      key={row.articleCreateTime}
+                    >
+                      <TableCell className={classes.link}
+                                 onClick={openURL.bind(this,
+                                   row.articlePermalink)}>
+                        {row.articleTitle}
+                      </TableCell>
+                    </TableRow>
+                  )
+                })
+              }
+            </TableBody>
+          </Table>
+        </Card>
+
         {
           this.state.data.tasks.taskCount !== 0 &&
           (
@@ -298,23 +347,7 @@ export default class Welcome extends React.Component {
           : classes.welcomeChart}>
           <div id="chart" className={classes.welcomeChartContent}></div>
         </Card>
-        <SwipeableDrawer onClose={this.toggleB3log}
-                         onOpen={this.toggleB3log} anchor="right"
-                         open={this.state.b3log}>
-          <div className={classes.b3log}>
-            {
-              this.state.b3logList.map(row => {
-                return (
-                  <div className={classes.listItem} key={row.articleCreateTime}
-                       onClick={this.openURL.bind(this, row.articlePermalink)}>
-                      <div className={classnames(classes.listTitle, classes.fnPointer)}
-                      >{row.articleTitle}</div>
-                  </div>
-                )
-              })
-            }
-          </div>
-        </SwipeableDrawer>
+
         <Snackbar
           anchorOrigin={{vertical: 'top', horizontal: 'center'}}
           open={this.state.copied}

@@ -4,6 +4,11 @@ import fetchJsonp from 'fetch-jsonp'
 import Button from '@material-ui/core/Button'
 import Card from '@material-ui/core/Card'
 import classnames from 'classnames'
+import {openURL} from '../utils/openURL'
+import Toolbar from '@material-ui/core/Toolbar'
+import Typography from '@material-ui/core/Typography'
+import { clearCookie } from '../utils/clearCookie'
+import AppBar from '@material-ui/core/AppBar'
 
 export default class Donate extends React.Component {
 
@@ -22,42 +27,52 @@ export default class Donate extends React.Component {
       })
   }
 
-  openURL (path) {
-    window.shell.openExternal(path)
-  }
-
   render () {
     const {classes} = this.props
     return (
       <div className={classes.donate}>
+        <AppBar
+          className={classes.menu}>
+          <Toolbar>
+            <Typography className={classes.fnFlex1} color="inherit" noWrap>
+              成为赞助者
+            </Typography>
+            <Button
+              className={classes.ftOriginal}
+              color="inherit"
+              onClick={clearCookie}
+            >
+              切换账号
+            </Button>
+          </Toolbar>
+        </AppBar>
         <h2>❤️ 欢迎成为我们的赞助者</h2>
         <span className={classes.link}
-              onClick={this.openURL.bind(this,
-                'https://b3log.org/')}>B3log 开源组织</span>
+              onClick={openURL.bind(this, 'https://b3log.org/')}>B3log 开源组织</span>
         旗下包含&nbsp;
         <span className={classes.link}
-              onClick={this.openURL.bind(this,
+              onClick={openURL.bind(this,
                 'https://github.com/b3log/baidu-netdisk-downloaderx')}>BND</span>、
         <span className={classes.link}
-              onClick={this.openURL.bind(this,
+              onClick={openURL.bind(this,
                 'https://sym.b3log.org/')}>Symphony</span>、
         <span className={classes.link}
-              onClick={this.openURL.bind(this,
+              onClick={openURL.bind(this,
                 'https://solo.b3log.org/')}>Solo</span>、
         <span className={classes.link}
-              onClick={this.openURL.bind(this,
+              onClick={openURL.bind(this,
                 'https://github.com/b3log/pipe')}>Pipe</span>、
         <span className={classes.link}
-              onClick={this.openURL.bind(this,
+              onClick={openURL.bind(this,
                 'https://github.com/b3log/wide')}>Wide</span>、
         <span className={classes.link}
-              onClick={this.openURL.bind(this,
+              onClick={openURL.bind(this,
                 'https://github.com/b3log/latke')}>Latke</span>、
         <span className={classes.link}
-              onClick={this.openURL.bind(this,
+              onClick={openURL.bind(this,
                 'https://github.com/b3log/vditor')}>Vditor</span>、
         <span className={classes.link}
-              onClick={this.openURL.bind(this,
+              onClick={openURL.bind(this,
                 'https://github.com/b3log/gulu')}>Gulu</span>&nbsp;等一系列开源项目。随着项目规模的增长，我们需要有相应的资金支持才能持续项目的维护和开发。
         <br/><br/>
         如果你觉得 BND2 还算好用，可通过支付宝对我们进行赞助，谢谢 🙏
@@ -65,7 +80,7 @@ export default class Donate extends React.Component {
         <div className={classes.ftCenter}>
           <Button className={classes.ftOriginal}
                   color='primary'
-                  onClick={this.openURL.bind(this,
+                  onClick={openURL.bind(this,
                     'https://hacpai.com/sponsor')}
                   variant="contained">
             <svg viewBox="0 0 32 32" width="100%" height="100%"
@@ -88,7 +103,7 @@ export default class Donate extends React.Component {
                       row.paymentUserName
                         ? (
                           <span className={classes.link}
-                                onClick={this.openURL.bind(this,
+                                onClick={openURL.bind(this,
                                   'https://hacpai.com/member/' +
                                   row.paymentUserName)}>{row.paymentUserName}</span>)
                         : (<span className={classes.ftGray}>匿名好心人</span>)

@@ -17,6 +17,10 @@ import DialogContentText from '@material-ui/core/DialogContentText'
 import DialogTitle from '@material-ui/core/DialogTitle'
 import SaveAltIcon from '@material-ui/icons/SaveAlt'
 import FolderIcon from '@material-ui/icons/Folder'
+import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
+import Typography from '@material-ui/core/Typography'
+import { clearCookie } from '../utils/clearCookie'
 
 export default class Index extends React.Component {
 
@@ -231,6 +235,21 @@ export default class Index extends React.Component {
 
     return (
       <div>
+        <AppBar
+          className={classes.menu}>
+          <Toolbar>
+            <Typography className={classes.fnFlex1} color="inherit" noWrap>
+              全部文件
+            </Typography>
+            <Button
+              className={classes.ftOriginal}
+              color="inherit"
+              onClick={clearCookie}
+            >
+              切换账号
+            </Button>
+          </Toolbar>
+        </AppBar>
         <div className={classnames(classes.fnFlex, classes.ftNormalSize)}>
           <div className={classes.fnFlex1}>
             <span className={classes.link}
