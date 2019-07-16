@@ -3,6 +3,8 @@
 *.so
 *.dylib
 node_modules
+bnd2
+bnd2.exe
 
 # Test binary, build with `go test -c`
 *.test
