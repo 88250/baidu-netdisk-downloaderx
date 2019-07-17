@@ -20,9 +20,8 @@ export default class Donate extends React.Component {
     fetchJsonp('https://hacpai.com/apis/sponsors').
       then(response => response.json()).
       then(json => {
-        console.log(json.payments)
         this.setState({
-          payments: json.payments,
+          payments: json.data.payments,
         })
       })
   }
