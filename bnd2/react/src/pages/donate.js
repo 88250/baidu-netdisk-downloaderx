@@ -114,7 +114,7 @@ export default class Donate extends React.Component {
                         classes.ftGreen)}>{row.paymentAmount}RMB</span>
                     <span className={classes.ftGray}>{row.paymentTimeStr}</span>
                   </div>
-                  <div>{row.paymentMemo}</div>
+                  <div dangerouslySetInnerHTML={{ __html: row.paymentMemo}}></div>
                 </div>
               )
             })
