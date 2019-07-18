@@ -2,6 +2,7 @@ package util
 
 import (
 	"context"
+	"github.com/b3log/gulu"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -15,12 +16,12 @@ var R rpc.Protocol
 
 func StartAria2() {
 	aria2 := filepath.Join(BndDir, "aria2c")
-	if IsWindows() {
+	if gulu.OS.IsWindows() {
 		aria2 += ".exe"
 	}
 
 	x := "16"
-	if IsWindows() {
+	if gulu.OS.IsWindows() {
 		x = "128"
 	}
 

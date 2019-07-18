@@ -2,6 +2,8 @@ package util
 
 import (
 	"path/filepath"
+
+	"github.com/b3log/gulu"
 )
 
 const Ver = "2.0.0"
@@ -14,5 +16,5 @@ const (
 	AriaPort   = 6805
 )
 
-var HomeDir = UserHome()
+var HomeDir, _ = gulu.OS.Home()
 var BndDir = filepath.Join(HomeDir, ".bnd2")

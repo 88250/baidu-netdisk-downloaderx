@@ -7,12 +7,12 @@ import (
 	"os"
 	"time"
 
-	"github.com/b3log/bnd2/log"
+	"github.com/b3log/gulu"
 	"github.com/dustin/go-humanize"
 	"github.com/parnurzeal/gorequest"
 )
 
-var logger = log.NewLogger(os.Stdout)
+var logger = gulu.Log.NewLogger(os.Stdout)
 
 var AppId = "260149"
 var BDUSS = ""

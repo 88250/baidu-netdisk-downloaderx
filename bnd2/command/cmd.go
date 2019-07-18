@@ -3,10 +3,10 @@ package command
 import (
 	"os"
 
-	"github.com/b3log/bnd2/log"
+	"github.com/b3log/gulu"
 )
 
-var logger = log.NewLogger(os.Stdout)
+var logger = gulu.Log.NewLogger(os.Stdout)
 
 type Cmd interface {
 	Name() string

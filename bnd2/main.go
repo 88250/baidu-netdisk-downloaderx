@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"github.com/b3log/gulu"
 	"math/rand"
 	"net/http"
 	"os"
@@ -9,19 +10,18 @@ import (
 	"time"
 
 	"github.com/b3log/bnd2/command"
-	"github.com/b3log/bnd2/log"
 	"github.com/b3log/bnd2/util"
 	"github.com/gin-gonic/gin"
 	"gopkg.in/olahol/melody.v1"
 )
 
-var logger *log.Logger
+var logger *gulu.Logger
 
 func init() {
 	rand.Seed(time.Now().UTC().UnixNano())
 
-	log.SetLevel("error")
-	logger = log.NewLogger(os.Stdout)
+	gulu.Log.SetLevel("error")
+	logger = gulu.Log.NewLogger(os.Stdout)
 
 	if util.CheckUpgrade() {
 		logger.Fatalf("current BND2 kernel v[%s] is outdated, exited", util.Ver)
