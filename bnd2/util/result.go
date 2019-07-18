@@ -2,22 +2,16 @@ package util
 
 import (
 	"encoding/json"
-
-	)
+	"github.com/b3log/gulu"
+)
 
 type Result struct {
-	Code int         `json:"code"`
-	Cmd  string      `json:"cmd"`
-	Msg  string      `json:"msg"`
-	Data interface{} `json:"data"`
+	Cmd string `json:"cmd"`
+	*gulu.Result
 }
 
 func NewResult() *Result {
-	return &Result{
-		Code: 0,
-		Msg:  "",
-		Data: nil,
-	}
+	return &Result{"", &gulu.Result{Code: 0, Msg: "", Data: nil,}}
 }
 
 func NewCmdResult(cmd string) *Result {
