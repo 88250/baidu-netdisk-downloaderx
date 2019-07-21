@@ -84,10 +84,11 @@ BND 分为两个系列，BND1 和 BND2，下面分别进行介绍。
 
 ## 🏘️ 社区
 
-BND 项目的主要贡献者来自于 B3log 开源社区，欢迎大家对 BND 的开发、测试、反馈、推广等贡献自己的一份力量。[B3log 开源组织欢迎大家加入！](https://hacpai.com/article/1463025124998)
+BND 项目的主要贡献者来自于 B3log 开源社区，欢迎大家对 BND 的开发、测试、反馈、推广等贡献自己的一份力量。
 
 * [讨论区](https://hacpai.com/tag/bnd)
 * [报告问题](https://github.com/b3log/baidu-netdisk-downloaderx/issues/new/choose)
+* [B3log 开源社区欢迎大家加入！](https://hacpai.com/article/1463025124998)
 
 ## 📄 授权
 
