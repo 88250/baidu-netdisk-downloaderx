@@ -46,39 +46,11 @@ export default class Donate extends React.Component {
           </Toolbar>
         </AppBar>
         <h2>❤️ 欢迎成为我们的赞助者</h2>
-        <span className={classes.link}
-              onClick={openURL.bind(this, 'https://b3log.org/')}>B3log 开源组织</span>
-        旗下包含&nbsp;
-        <span className={classes.link}
-              onClick={openURL.bind(this,
-                'https://github.com/b3log/baidu-netdisk-downloaderx')}>BND</span>、
-        <span className={classes.link}
-              onClick={openURL.bind(this,
-                'https://sym.b3log.org/')}>Symphony</span>、
-        <span className={classes.link}
-              onClick={openURL.bind(this,
-                'https://solo.b3log.org/')}>Solo</span>、
-        <span className={classes.link}
-              onClick={openURL.bind(this,
-                'https://github.com/b3log/pipe')}>Pipe</span>、
-        <span className={classes.link}
-              onClick={openURL.bind(this,
-                'https://github.com/b3log/wide')}>Wide</span>、
-        <span className={classes.link}
-              onClick={openURL.bind(this,
-                'https://github.com/b3log/latke')}>Latke</span>、
-        <span className={classes.link}
-              onClick={openURL.bind(this,
-                'https://github.com/b3log/vditor')}>Vditor</span>、
-        <span className={classes.link}
-              onClick={openURL.bind(this,
-                'https://github.com/b3log/gulu')}>Gulu</span>&nbsp;等一系列开源项目。随着项目规模的增长，我们需要有相应的资金支持才能持续项目的维护和开发。
-        <br/><br/>
         如果你觉得 BND2 还算好用，请在<span className={classes.link}
       onClick={openURL.bind(this,
               'https://github.com/b3log/baidu-netdisk-downloaderx')}>项目主页</span>标星点赞并<span className={classes.link}
       onClick={openURL.bind(this,
-              'https://github.com/b3log/baidu-netdisk-downloaderx')}>关注我</span>了解更多开源作品<br/>
+              'https://github.com/88250')}>关注我</span>了解更多开源作品。<br/>
         也欢迎你通过支付宝进行捐赠赞助，非常感谢 🙏
         <br/><br/>
         <div className={classes.ftCenter}>
