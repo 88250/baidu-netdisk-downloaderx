@@ -10,6 +10,7 @@ import (
 	"strings"
 
 	"github.com/andlabs/ui"
+	"github.com/b3log/gulu"
 	"github.com/iikira/BaiduPCS-Go/internal0/pcscommand"
 	"github.com/iikira/BaiduPCS-Go/internal0/pcsconfig"
 	"github.com/iikira/BaiduPCS-Go/pcscache"
@@ -328,7 +329,7 @@ func unpackAria2() {
 		return
 	}
 
-	if err := Unzip(packZipPath, pcscommand.BndDir); nil != err {
+	if err := gulu.Zip.Unzip(packZipPath, pcscommand.BndDir); nil != err {
 		return
 	}
 
