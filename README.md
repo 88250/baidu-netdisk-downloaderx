@@ -106,6 +106,7 @@ BND 使用 [GPLv3](https://www.gnu.org/licenses/gpl-3.0.txt) 开源协议。
 
 ## 👍 开源项目推荐
 
+* 如果你正在学习前端知识或是在准备前端面试，可以考虑参考[精选前端问题集，坚持每天 30 秒](https://github.com/b3log/30-seconds-zh_CN)
 * 如果你需要搭建一个个人博客系统，可以考虑使用 [Solo](https://github.com/b3log/solo)
 * 如果你需要搭建一个多用户博客平台，可以考虑使用 [Pipe](https://github.com/b3log/pipe)
 * 如果你需要搭建一个社区平台，可以考虑使用 [Sym](https://github.com/b3log/symphony)
