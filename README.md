@@ -99,7 +99,7 @@ BND 使用 [GPLv3](https://www.gnu.org/licenses/gpl-3.0.txt) 开源协议。
 * [aria2](https://github.com/aria2/aria2)：超高速的下载引擎
 * [BaiduPCS-Go](https://github.com/iikira/BaiduPCS-Go)：百度网盘客户端 - Go 语言编写
 * [andlabs/ui](https://github.com/andlabs/ui)：跨平台的 Go GUI 库
-* [Gulu](https://github.com/b3log/gulu)：⭕ Go 语言常用工具库，这个轱辘还算圆！
+* [Gulu](https://github.com/b3log/gulu)：Go 语言常用工具库，这个轱辘还算圆！
 * [React](https://github.com/facebook/react)：使用 JS 构建用户界面库
 * [Electron](https://github.com/electron/electron)：使用 JS、HTML、CSS 的跨平台桌面应用库
 
