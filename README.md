@@ -1,5 +1,5 @@
 <p align = "center">
-<img alt="BND" src="https://user-images.githubusercontent.com/873584/61258852-25162d00-a7aa-11e9-94eb-00c14707b49a.png">
+<img alt="BND" src="https://raw.githubusercontent.com/b3log/baidu-netdisk-downloaderx/master/bnd2/react/public/logo.png">
 <br><br>
 一款图形界面的百度网盘不限速下载器，支持 Windows、Linux 和 Mac
 <br><br>
