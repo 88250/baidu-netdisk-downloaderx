@@ -275,7 +275,7 @@ export default class Welcome extends React.Component {
               <Typography variant="h5" className={classes.link}
                           component="h2" onClick={openURL.bind(this,
                 'https://github.com/b3log/30-seconds-zh_CN')}>
-                每天 30 秒精通前端
+                前端知识精选集
               </Typography>
             </CardContent>
             <CardActions>

@@ -1,5 +1,5 @@
 <p align = "center">
-<img alt="BND" src="https://user-images.githubusercontent.com/873584/61258852-25162d00-a7aa-11e9-94eb-00c14707b49a.png">
+<img alt="BND" width="128" src="https://raw.githubusercontent.com/b3log/baidu-netdisk-downloaderx/master/bnd2/react/public/logo.png">
 <br><br>
 一款图形界面的百度网盘不限速下载器，支持 Windows、Linux 和 Mac
 <br><br>
@@ -107,7 +107,7 @@ BND 使用 [GPLv3](https://www.gnu.org/licenses/gpl-3.0.txt) 开源协议。
 
 ## 👍 开源项目推荐
 
-* 如果你正在学习前端知识或是在准备前端面试，可以考虑参考[精选前端问题集，坚持每天 30 秒](https://github.com/b3log/30-seconds-zh_CN)
+* [前端精选问题集，每天仅需 30 秒](https://github.com/b3log/30-seconds-zh_CN)
 * 如果你需要搭建一个个人博客系统，可以考虑使用 [Solo](https://github.com/b3log/solo)
 * 如果你需要搭建一个多用户博客平台，可以考虑使用 [Pipe](https://github.com/b3log/pipe)
 * 如果你需要搭建一个社区平台，可以考虑使用 [Sym](https://github.com/b3log/symphony)
