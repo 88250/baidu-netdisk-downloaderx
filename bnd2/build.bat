@@ -12,6 +12,6 @@ go build -v -o electron/bnd2 -ldflags "-s -w"
 echo Building UI
 cd electron
 node -v
-npm -v
-npm install && npm run dist
+call npm -v
+call npm install && npm run dist
 cd ..
