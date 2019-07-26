@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>BND2</title>
     <style>
+        html, body, webview {
+            height: 100vh;
+            width: 100vw;
+        }
+
         .fn__hide {
             display: none;
         }
@@ -29,10 +34,11 @@
 </head>
 <body style="margin: 0">
 <div id="loadingTip" class="tip">加载中，请稍后</div>
-<div id="downloadTip" class="fn__hide tip">项目已开源，仅供程序员学习交流，不再提供可执行文件。前往查看<span style="text-decoration:underline;cursor: pointer">源代码</span></div>
+<div id="downloadTip" class="fn__hide tip">项目已开源，仅供程序员学习交流，不再提供可执行文件。前往查看<span
+        style="text-decoration:underline;cursor: pointer">源代码</span></div>
 <div id="loginBaiduTip" class="fn__hide tip">请先登录百度网盘账号</div>
 <div id="errorTip" class="fn__hide tip tip--error"></div>
-<webview id="loginWV" style="height:100vh;width:100vw;" nodeintegration></webview>
+<webview id="loginWV" nodeintegration></webview>
 <script>
   require('./renderer.js')
 </script>

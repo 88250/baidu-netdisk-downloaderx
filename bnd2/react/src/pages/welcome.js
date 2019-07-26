@@ -282,7 +282,7 @@ export default class Welcome extends React.Component {
               <Button size="small" className={classes.ftOriginal}
                       onClick={openURL.bind(this,
                         'https://hacpai.com/domain/frontend')}>
-                📔 浏览前端相关讨论
+                📙 浏览前端相关讨论
               </Button>
             </CardActions>
           </Card>

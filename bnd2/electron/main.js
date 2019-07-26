@@ -14,6 +14,10 @@ const createWindow = () => {
       resizable: false,
       maximizable: false,
       title: 'BND2',
+      webPreferences: {
+        nodeIntegration: true,
+        webviewTag: true,
+      },
     })
 
   // and load the index.html of the app.
