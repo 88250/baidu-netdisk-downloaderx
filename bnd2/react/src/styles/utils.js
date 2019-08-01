@@ -37,10 +37,14 @@ export default {
   ftCenter: {
     textAlign: 'center',
   },
+  ftBreak: {
+    wordBreak: 'break-all',
+  },
   link: {
     color: '#4285f4',
     textDecoration: 'none',
     cursor: 'pointer',
+    wordBreak: 'break-all',
     '&:hover': {
       textDecoration: 'underline',
     },

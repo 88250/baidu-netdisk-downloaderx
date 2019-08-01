@@ -322,7 +322,7 @@ export default class Index extends React.Component {
                           className={classes.ftYellow}/> : ''}
                       </TableCell>
                       <TableCell
-                        className={row.isdir === 1 ? classes.link : ''}
+                        className={row.isdir === 1 ? classes.link : classes.ftBreak}
                         padding="none"
                         onClick={this.getList.bind(this, row, null)}>
                         {row.server_filename}
