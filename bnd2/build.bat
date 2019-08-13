@@ -1,4 +1,4 @@
-set GOPROXY=https://goproxy.io
+set GOPROXY=https://goproxy.cn
 echo Building Kernel
 set GOOS=windows
 set GOARCH=amd64

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export GOPROXY=https://goproxy.io
+export GOPROXY=https://goproxy.cn
 echo Building Kernel
 export GOOS=windows
 export GOARCH=amd64
