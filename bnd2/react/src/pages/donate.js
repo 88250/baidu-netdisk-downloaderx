@@ -48,7 +48,7 @@ export default class Donate extends React.Component {
         <h2>❤️ 欢迎成为我们的赞助者</h2>
         如果你觉得 BND2 还算好用，请在<span className={classes.link}
       onClick={openURL.bind(this,
-              'https://github.com/b3log/baidu-netdisk-downloaderx')}>项目主页</span>标星点赞并<span className={classes.link}
+              'https://github.com/88250/baidu-netdisk-downloaderx')}>项目主页</span>标星点赞并<span className={classes.link}
       onClick={openURL.bind(this,
               'https://github.com/88250')}>关注我</span>了解更多开源作品。<br/>
         也欢迎你通过支付宝进行捐赠赞助，非常感谢 🙏

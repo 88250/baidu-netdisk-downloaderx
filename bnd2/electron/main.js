@@ -48,7 +48,7 @@ const createMenu = () => {
           click () {
             require('electron').
               shell.
-              openExternal('https://github.com/b3log/baidu-netdisk-downloaderx')
+              openExternal('https://github.com/88250/baidu-netdisk-downloaderx')
           },
         },
         {type: 'separator'},

@@ -250,7 +250,7 @@ export default class Welcome extends React.Component {
               <Typography variant="h5" component="h2">
                 <span className={classes.link}
                       onClick={openURL.bind(this,
-                        'https://github.com/b3log/baidu-netdisk-downloaderx')}>前往 GitHub</span>
+                        'https://github.com/88250/baidu-netdisk-downloaderx')}>前往 GitHub</span>
               </Typography>
             </CardContent>
             <CardActions>
