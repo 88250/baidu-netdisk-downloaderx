@@ -281,7 +281,7 @@ export default class Welcome extends React.Component {
             <CardActions>
               <Button size="small" className={classes.ftOriginal}
                       onClick={openURL.bind(this,
-                        'https://github.com/b3log/30-seconds-zh_CN')}>
+                        'https://github.com/Vanessa219/30-seconds-zh_CN')}>
                 📙 前端知识精选集
               </Button>
             </CardActions>
