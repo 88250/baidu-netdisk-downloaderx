@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/b3log/bnd2/util"
+	"github.com/88250/bnd2/util"
 	"github.com/dustin/go-humanize"
 )
 

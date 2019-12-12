@@ -1,7 +1,7 @@
 package command
 
 import (
-	"github.com/b3log/bnd2/util"
+	"github.com/88250/bnd2/util"
 )
 
 type ls struct {

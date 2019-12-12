@@ -3,7 +3,7 @@ package util
 import (
 	"path/filepath"
 
-	"github.com/b3log/gulu"
+	"github.com/88250/gulu"
 )
 
 const Ver = "2.0.0"

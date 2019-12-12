@@ -2,7 +2,8 @@ package util
 
 import (
 	"encoding/json"
-	"github.com/b3log/gulu"
+
+	"github.com/88250/gulu"
 )
 
 type Result struct {
@@ -11,7 +12,7 @@ type Result struct {
 }
 
 func NewResult() *Result {
-	return &Result{"", &gulu.Result{Code: 0, Msg: "", Data: nil,}}
+	return &Result{"", &gulu.Result{Code: 0, Msg: "", Data: nil}}
 }
 
 func NewCmdResult(cmd string) *Result {

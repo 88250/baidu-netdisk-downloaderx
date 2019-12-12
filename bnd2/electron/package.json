@@ -11,7 +11,7 @@
     "dist": "cross-env ELECTRON_MIRROR=http://npm.taobao.org/mirrors/electron/ electron-builder"
   },
   "productName": "BND2",
-  "repository": "https://github.com/b3log/bnd2",
+  "repository": "https://github.com/88250/baidu-netdisk-downloaderx",
   "keywords": [
     "Baidu",
     "下载",

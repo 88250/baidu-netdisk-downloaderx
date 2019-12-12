@@ -1,9 +1,9 @@
-module github.com/b3log/bnd2
+module github.com/88250/bnd2
 
 go 1.12
 
 require (
-	github.com/b3log/gulu v0.0.0-20190530021622-d4d6c98f79bb
+	github.com/88250/gulu v0.0.0-20191130041802-4455e25d91d9
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/denisbrodbeck/machineid v1.0.1
 	github.com/dustin/go-humanize v1.0.0
@@ -25,7 +25,6 @@ require (
 	github.com/zyxar/argo v0.0.0-20190709183644-6096bc0e6414
 	golang.org/x/net v0.0.0-20190628185345-da137c7871d7 // indirect
 	golang.org/x/sys v0.0.0-20190712062909-fae7ac547cb7 // indirect
-	golang.org/x/text v0.3.2
 	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127 // indirect
 	gopkg.in/olahol/melody.v1 v1.0.0-20170518105555-d52139073376
 )

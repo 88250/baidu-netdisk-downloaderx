@@ -2,15 +2,15 @@ package main
 
 import (
 	"encoding/json"
-	"github.com/b3log/gulu"
+	"github.com/88250/gulu"
 	"math/rand"
 	"net/http"
 	"os"
 	"strconv"
 	"time"
 
-	"github.com/b3log/bnd2/command"
-	"github.com/b3log/bnd2/util"
+	"github.com/88250/bnd2/command"
+	"github.com/88250/bnd2/util"
 	"github.com/gin-gonic/gin"
 	"gopkg.in/olahol/melody.v1"
 )

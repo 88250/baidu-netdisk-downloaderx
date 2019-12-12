@@ -1,5 +1,5 @@
-github.com/b3log/gulu v0.0.0-20190530021622-d4d6c98f79bb h1:v5GfM1wIZpfBgJrjSCkinDOLyCrIo9p35aYmFffLhLI=
-github.com/b3log/gulu v0.0.0-20190530021622-d4d6c98f79bb/go.mod h1:UmyB0pe8jv1K3dZy/4UE3uCpM8zYkB4nbiIgjemuQ7A=
+github.com/88250/gulu v0.0.0-20191130041802-4455e25d91d9 h1:8hewQs1pRYnZT9rR8y+uNbj9G5R6jLcbOc+nEjZqklA=
+github.com/88250/gulu v0.0.0-20191130041802-4455e25d91d9/go.mod h1:a2POIziN+QFeNT4Mj7FHH2lz1HEaFlMRF6wPE0NHM4U=
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=

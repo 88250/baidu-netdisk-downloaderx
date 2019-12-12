@@ -3,7 +3,7 @@ package command
 import (
 	"time"
 
-	"github.com/b3log/bnd2/util"
+	"github.com/88250/bnd2/util"
 )
 
 type pauseall struct {

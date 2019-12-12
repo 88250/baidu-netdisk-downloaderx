@@ -1,6 +1,6 @@
 package command
 
-import "github.com/b3log/bnd2/util"
+import "github.com/88250/bnd2/util"
 
 type deldownload struct {
 }

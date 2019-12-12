@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/b3log/gulu"
+	"github.com/88250/gulu"
 	"github.com/dustin/go-humanize"
 	"github.com/parnurzeal/gorequest"
 )
