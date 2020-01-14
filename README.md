@@ -1,3 +1,7 @@
+**友情提示：目前 BND 已经起不到加速效果了，请勿浪费时间尝试，把精力多用来陪陪女友吧**
+
+---
+
 * [BND 安全警告](https://hacpai.com/article/1572278847172)
 * [一款图形界面的百度网盘不限速下载器，支持 Windows、Linux 和 Mac](https://hacpai.com/article/1568859315654)
 * [百度网盘不限速下载器 BND 下载地址](https://hacpai.com/article/1563154719934)
