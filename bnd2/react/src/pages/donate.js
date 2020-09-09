@@ -17,7 +17,7 @@ export default class Donate extends React.Component {
   }
 
   componentDidMount () {
-    fetchJsonp('https://hacpai.com/apis/sponsors').
+    fetchJsonp('https://ld246.com/apis/sponsors').
       then(response => response.json()).
       then(json => {
         this.setState({
@@ -57,7 +57,7 @@ export default class Donate extends React.Component {
           <Button className={classes.ftOriginal}
                   color='primary'
                   onClick={openURL.bind(this,
-                    'https://hacpai.com/sponsor')}
+                    'https://ld246.com/sponsor')}
                   variant="contained">
             <svg viewBox="0 0 32 32" width="100%" height="100%"
                  className={classes.svg}>
@@ -80,7 +80,7 @@ export default class Donate extends React.Component {
                         ? (
                           <span className={classes.link}
                                 onClick={openURL.bind(this,
-                                  'https://hacpai.com/member/' +
+                                  'https://ld246.com/member/' +
                                   row.paymentUserName)}>{row.paymentUserName}</span>)
                         : (<span className={classes.ftGray}>匿名好心人</span>)
                     }

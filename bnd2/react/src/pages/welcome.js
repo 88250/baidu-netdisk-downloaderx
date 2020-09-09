@@ -32,7 +32,7 @@ export default class Welcome extends React.Component {
     b3logList: [],
     showB3log: 'block',
     copied: false,
-    shareText: 'https://hacpai.com/tag/bnd',
+    shareText: 'https://ld246.com/tag/bnd',
     data: {
       ctasks: {totalSize: 0, hTotalSize: '0 B', ctaskCount: 0},
       tasks: {
@@ -141,7 +141,7 @@ export default class Welcome extends React.Component {
       'px'
     window.rws.send(JSON.stringify({cmd: 'statistic', param: {}}))
 
-    fetchJsonp('https://hacpai.com/apis/news').
+    fetchJsonp('https://ld246.com/apis/news').
       then(response => response.json()).
       then(json => {
         this.setState({
@@ -274,7 +274,7 @@ export default class Welcome extends React.Component {
               </Typography>
               <Typography variant="h5" className={classes.link}
                           component="h2" onClick={openURL.bind(this,
-                'https://hacpai.com/article/1572278847172')}>
+                'https://ld246.com/article/1572278847172')}>
                 BND 安全警告
               </Typography>
             </CardContent>

@@ -1,9 +1,9 @@
-* [关于停用 BND 的说明](https://hacpai.com/article/1586956316578)
-* [BND 安全警告](https://hacpai.com/article/1572278847172)
-* [一款图形界面的百度网盘不限速下载器，支持 Windows、Linux 和 Mac](https://hacpai.com/article/1568859315654)
-* [百度网盘不限速下载器 BND 下载地址](https://hacpai.com/article/1563154719934)
-* [又一个百度网盘不限速下载器 BND](https://hacpai.com/article/1524460877352)
-* [百度不限速下载器 BND2 技术架构简介](https://hacpai.com/article/1535277215816)
+* [关于停用 BND 的说明](https://ld246.com/article/1586956316578)
+* [BND 安全警告](https://ld246.com/article/1572278847172)
+* [一款图形界面的百度网盘不限速下载器，支持 Windows、Linux 和 Mac](https://ld246.com/article/1568859315654)
+* [百度网盘不限速下载器 BND 下载地址](https://ld246.com/article/1563154719934)
+* [又一个百度网盘不限速下载器 BND](https://ld246.com/article/1524460877352)
+* [百度不限速下载器 BND2 技术架构简介](https://ld246.com/article/1535277215816)
 
 欢迎关注 B3log 开源社区微信公众号 `B3log开源`：
 

@@ -137,7 +137,7 @@ Gulu 肯定有一些不足之处：
 
 ## 🏘️ 社区
 
-* [讨论区](https://hacpai.com/tag/gulu)
+* [讨论区](https://ld246.com/tag/gulu)
 * [报告问题](https://github.com/b3log/gulu/issues/new/choose)
 
 ## 📄 授权

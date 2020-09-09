@@ -94,7 +94,7 @@ func showBDLogin() {
 	}
 	usageButton := ui.NewButton("点我查看使用指南")
 	usageButton.OnClicked(func(button *ui.Button) {
-		OpenBrowser(loginWin, "https://hacpai.com/article/1524460877352")
+		OpenBrowser(loginWin, "https://ld246.com/article/1524460877352")
 	})
 	vBox.Append(ui.NewHorizontalSeparator(), false)
 	vBox.Append(usageButton, true)
